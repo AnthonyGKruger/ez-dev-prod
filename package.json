@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
+    "cookies-next": "^2.1.2",
     "eslint": "8.44.0",
-    "eslint-config-next": "13.4.8",
-    "next": "13.4.8",
+    "eslint-config-next": "^13.4.9",
+    "next": "13.4.9",
     "postcss": "8.4.25",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-lottie-player": "^1.5.4",
+    "react-redux": "^8.1.1",
+    "react-use-downloader": "^1.2.4",
     "tailwindcss": "3.3.2"
   }
 }
