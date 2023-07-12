@@ -20,19 +20,19 @@ export default () => {
 		{
 			href: "#",
 			name: (
-				<AiFillGithub className="hover:text-[#a4804b] transition-all duration-300 text-3xl" />
+				<AiFillGithub className="hover:text-primary-gold transition-all duration-300 text-3xl" />
 			),
 		},
 		{
 			href: "#",
 			name: (
-				<AiFillLinkedin className="hover:text-[#a4804b] transition-all duration-300 text-3xl" />
+				<AiFillLinkedin className="hover:text-primary-gold transition-all duration-300 text-3xl" />
 			),
 		},
 	];
 
 	return (
-		<footer className="pt-10 mx-auto">
+		<footer className="pt-10 mx-auto border border-t border-alternative-gold">
 			<div className="max-w-screen-xl mx-auto px-4  md:px-8">
 				<div className="justify-center sm:flex">
 					<div className="space-y-6">
@@ -48,9 +48,9 @@ export default () => {
 							Nulla auctor metus vitae lectus iaculis, vel euismod massa
 							efficitur.
 						</p> */}
-						<ul className="flex flex-wrap items-center gap-4 text-sm sm:text-base justify-center ">
+						<ul className="flex flex-wrap items-center gap-4 text-sm 2xl:text-xl sm:text-base justify-center ">
 							{footerNavs.map((item, idx) => (
-								<li key={idx}className=" hover:text-[#a4804b] duration-150">
+								<li key={idx}className=" hover:text-primary-gold duration-150">
 									<Link  href={item.href}>
 										{item.name}
 									</Link>
@@ -70,10 +70,10 @@ export default () => {
 						</div>
 					</div> */}
 				</div>
-				<div className="mt-10 py-10 border-t text-center">
+				<div className="mt-10 py-10 border-t border-alternative-gold text-center">
 					<p>
 						© {new Date().getFullYear() + " "}
-						<Link href="/" className="hover:text-[#a4804b] duration-150">
+						<Link href="/" className="hover:text-primary-gold duration-150">
 							EZdev Solutions (PTY) LTD.
 						</Link>{" "}
 						All rights reserved.

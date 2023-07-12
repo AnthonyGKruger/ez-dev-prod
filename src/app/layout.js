@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import Footer from "@/components/shared/Footer";
 import CookieBanner from "@/components/shared/CookieBanner";
+import Companies from "@/components/shared/Companies";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
@@ -37,11 +38,11 @@ export default ({ children }) => {
 		`}
 			</Script> */}
 
-			<body className={`${roboto.className} bg-white text-[#0f2740]`}>
+			<body className={`${roboto.className} bg-white text-alternative-blue`}>
 				<Provider store={store}>
 					<Navbar />
 					{children}
-
+					<Companies/>
 					<Footer />
 					<CookieBanner />
 					<Analytics />
