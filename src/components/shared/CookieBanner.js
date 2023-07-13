@@ -52,8 +52,8 @@ const CookieBanner = (props) => {
 						website you consent to all cookies & terms and conditions in
 						accordance with my{" "}
 						<Link
-							className={`hover:text-[#624111] duration-500 font-extrabold underline `}
-							href={"/PrivacyPolicy"}
+							className={`hover:text-[#624111] duration-500 font-lightbold underline `}
+							href={"/privacy-policy"}
 						>
 							Privacy Policy.
 						</Link>
