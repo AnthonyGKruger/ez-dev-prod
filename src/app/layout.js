@@ -15,7 +15,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 export default ({ children }) => {
 	return (
 		<html lang="en">
-			{/* <Script
+			<Script
 				strategy="lazyOnload"
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
 			/>
@@ -29,7 +29,7 @@ export default ({ children }) => {
 				page_path: window.location.pathname,
 				});
 		`}
-			</Script> */}
+			</Script>
 
 			{/* <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script> */}
 

@@ -23,11 +23,11 @@ const CookieBanner = (props) => {
 
 	return (
 		<article
-			className={` md:w-3/4 bg-white pa2 br4 border rounded-xl mx-4 p-2 bottom-3 fixed right-0 z-50 border-[#624111]`}
+			className={`md:w-3/4 xl:w-1/3 bg-white border rounded-xl mx-4 p-2 bottom-3 fixed right-0 z-50 border-[#624111]`}
 		>
-			<div className="container px-6 m-auto">
+			<div className="container p-6 pt-0 m-auto">
 				<div className="grid grid-cols-4 gap-6 md:grid-cols-12 lg:grid-cols-12">
-					<div className="col-span-1 md:col-span-2 lg:col-span-3">
+					<div className="col-span-1 md:col-span-2 lg:col-span-3 self-center">
 						<Lottie
 							loop
 							play
@@ -35,7 +35,7 @@ const CookieBanner = (props) => {
 							style={{ width: 70, height: 70 }}
 						/>
 					</div>
-					<div className="col-span-3 md:col-span-10 lg:col-span-9 py-auto">
+					<div className="col-span-3 md:col-span-10 lg:col-span-9 py-auto self-center">
 						<h1 className={`text-2xl mx-0 pt-5  `}>
 							Cookie Policy and Terms & Conditions
 						</h1>
@@ -44,9 +44,9 @@ const CookieBanner = (props) => {
 			</div>
 
 			<div
-				className={`p-3 border-t border-[#624111] grid grid-cols-4 gap-6 md:grid-cols-12 lg:grid-cols-12`}
+				className={`p-3 border-t border-[#624111] grid grid-cols-4 `}
 			>
-				<div className="col-span-4 md:col-span-9 lg:col-span-9">
+				<div className="col-span-4 ">
 					<p className={`text-lg`}>
 						This website uses cookies to improve the UI and UX. By using my
 						website you consent to all cookies & terms and conditions in
@@ -59,10 +59,10 @@ const CookieBanner = (props) => {
 						</Link>
 					</p>
 				</div>
-				<div className={`col-span-4 md:col-span-3 lg:col-span-3 flex`}>
+				<div className={`col-span-4  `}>
 					
 						<button
-							className={`flex self-center justify-center mx-auto my-auto text-lg tracking-wide font-extrabold border-2 border-[#624111] hover:border-[#354f6b] rounded-xl px-5 py-2  pointer bg-[#354f6b] hover:bg-white text-[#f1d6b0] hover:text-[#354f6b] duration-300`}
+							className={` self-center mt-4 mx-auto my-auto text-lg tracking-wide font-extrabold border-2 border-[#624111] hover:border-[#354f6b] rounded-xl px-5 py-2  pointer bg-[#354f6b] hover:bg-white text-[#f1d6b0] hover:text-[#354f6b] duration-300`}
 							onClick={() => acceptCookie()}
 						>
 							Accept
