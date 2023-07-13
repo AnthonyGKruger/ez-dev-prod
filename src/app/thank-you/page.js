@@ -11,8 +11,8 @@ export const metadata = {
 };
 
 const ThankYou = () => {
-	return (
-		<ThankYouContent/>
+	return (<>		<ThankYouContent/>
+</>
 	);
 };
 

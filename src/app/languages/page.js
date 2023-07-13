@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const Languages = () => {
-	return <LanguagesContent />;
+	return <><LanguagesContent /></>;
 };
 
 export default Languages;

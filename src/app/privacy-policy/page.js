@@ -12,9 +12,11 @@ export const metadata = {
 };
 
 const PrivacyPolicy = () => {
-  return (
-   <PrivacyPolicyContent/>
-  );
+	return (
+		<>
+			<PrivacyPolicyContent />
+		</>
+	);
 };
 
 export default PrivacyPolicy;

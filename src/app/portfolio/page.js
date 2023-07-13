@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 const Portfolio = () => {
-	return <PortfolioContent />;
+	return <><PortfolioContent /></>;
 };
 
 export default Portfolio;

@@ -13,7 +13,7 @@ export const metadata = {
 const WorkExperience = () => {
 
 	return (
-		<WorkExperienceContent/>
+		<><WorkExperienceContent/></>
 	);
 };
 

@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const ContactMe = () => {
-	return <ContactMeContent />;
+	return <><ContactMeContent /></>;
 };
 
 export default ContactMe;

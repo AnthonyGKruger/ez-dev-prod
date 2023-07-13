@@ -1,5 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
+// import Lottie from "@/components/shared/Lottie";
 import Lottie from "react-lottie-player";
 
 const Heading = ({ animationData, content, subtitle }) => {
@@ -9,13 +10,18 @@ const Heading = ({ animationData, content, subtitle }) => {
 		<section className="">
 			<div
 				className={`px-6 py-6 m-auto ${
-					pathname == "/"
-						? "border-t border-b border-primary-gold"
-						: "mt-9"
+					pathname == "/" ? "border-t border-b border-primary-gold" : "mt-9"
 				}`}
 			>
 				<div className="md:flex mx-auto md:mx-0 md:justify-center">
 					<div className="md:w-max w-fit mx-auto md:mx-0">
+						{/* <Lottie
+							height={150}
+							width={150}
+							animationData={animationData}
+							// className=" self-center mx-auto 2xl:mr-0 2xl:ml-auto"
+							// className="flex justify-center"
+						/> */}
 						<Lottie
 							loop
 							play

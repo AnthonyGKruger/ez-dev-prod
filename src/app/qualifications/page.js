@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const Qualifications = () => {
-	return <QualificationsContent />;
+	return <><QualificationsContent /></>;
 };
 
 export default Qualifications;
