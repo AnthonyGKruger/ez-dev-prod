@@ -42,7 +42,7 @@ const Hero = () => {
 						</p>
 						<div className="pt-9">
 							<button className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-4  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
-								<Link href="/" className="font-base text-lg tracking-wide ">Let's Chat!</Link>
+								<Link href="/contact-me" className="font-base text-lg tracking-wide ">Let's Chat!</Link>
 							</button>
 						</div>
 					</div>
