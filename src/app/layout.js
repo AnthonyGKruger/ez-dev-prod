@@ -38,7 +38,7 @@ export default ({ children }) => {
 		`}
 			</Script> */}
 
-			<body className={`${roboto.className} bg-white text-alternative-blue`}>
+			<body className={`${roboto.className} bg-white text-alternative-blue relative`}>
 				<Provider store={store}>
 					<Navbar />
 					{children}

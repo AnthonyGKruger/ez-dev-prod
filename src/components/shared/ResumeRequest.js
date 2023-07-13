@@ -20,7 +20,7 @@ const ResumeRequest = () => {
 				Want to skip through all of this? Download my resume below:
 			</h2>
 			<button
-				className={`mt-5 mx-auto text-center font-black border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-3  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue transition-all duration-500"`}
+				className={`mt-5 mx-auto text-center font-base border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-3  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue transition-all duration-500"`}
 				onClick={saveFile}
 			>
 				Download Resume

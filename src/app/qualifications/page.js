@@ -1,61 +1,17 @@
-"use client";
-import Heading from "@/components/shared/Heading";
-import QualificationItem from "@/components/qualifications/QualificationItem";
-import animationData from "@/lotties/Education.json";
-import { useState, useEffect } from "react";
+import QualificationsContent from "@/components/qualifications/Content";
+
+export const metadata = {
+  title: 'Qualifications - Anthony Gordon Kruger\'s Portfolio',
+	description:"EZdev portfolio",
+	viewport:"width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0",
+  icons: [
+    { rel: 'icon', url: '/favicon.png' },
+    { rel: 'apple', url: '/favicon.png' },
+  ],
+};
 
 const Qualifications = () => {
-	const [mappedQualifications, setMappedQualifications] = useState();
-
-	const fetchData = async () => {
-		const response = await fetch("/api/qualifications/");
-		const data = await response.json();
-
-		setMappedQualifications(
-			data.map((qualification, idx) => {
-				if (qualification.link) {
-					return (
-						<QualificationItem
-							key={idx}
-							institution={qualification.institution}
-							qualification={qualification.qualification}
-							dateFrom={qualification.dateFrom}
-							dateTo={qualification.dateTo}
-							comments={qualification.comments}
-							link={qualification.link}
-							slideFromRight={idx % 2 == 0 ? true : false}
-						/>
-					);
-				} else {
-					return (
-						<QualificationItem
-							key={idx}
-							institution={qualification.institution}
-							qualification={qualification.qualification}
-							dateFrom={qualification.dateFrom}
-							dateTo={qualification.dateTo}
-							comments={qualification.comments}
-              slideFromRight={idx % 2 == 0 ? true : false}
-						/>
-					);
-				}
-			})
-		);
-	};
-
-	useEffect(() => {
-		fetchData();
-	}, []);
-
-	return (
-		<>
-			<Heading
-				animationData={animationData}
-				content={"Always Leveling Up, Have A Look At My Qualifications 👇"}
-			/>
-			<section className="py-9">{mappedQualifications}</section>
-		</>
-	);
+	return <QualificationsContent />;
 };
 
 export default Qualifications;

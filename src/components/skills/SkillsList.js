@@ -133,7 +133,7 @@ const SkillsList = () => {
 						<figure className="p-9 pb-0 text-center">{skill.icon}</figure>
 
 						<div className="p-6">
-							<h3 className=" text-xl font-black">{skill.title}</h3>
+							<h3 className=" text-xl font-base">{skill.title}</h3>
 						</div>
 					</div>
 				</motion.div>

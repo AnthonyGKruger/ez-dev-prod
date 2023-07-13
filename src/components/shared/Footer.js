@@ -1,30 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { useRouter } from "next/navigation";
 
 export default () => {
+	const { push } = useRouter();
 	const footerNavs = [
-	
 		{
-			href: "#",
+			href: "/",
 			name: "About",
 		},
 		{
-			href: "#",
+			href: "/portfolio",
+			name: "Portfolio",
+		},
+		{
+			href: "/contact-me",
 			name: "Contact",
 		},
 		{
-			href: "#",
+			href: "/privacy-policy",
 			name: "Privacy",
 		},
 		{
-			href: "#",
+			href: "https://github.com/AnthonyGKruger",
 			name: (
 				<AiFillGithub className="hover:text-primary-gold transition-all duration-300 text-3xl" />
 			),
 		},
 		{
-			href: "#",
+			href: "https://www.linkedin.com/in/anthony-gordon-kruger-ezdev/",
 			name: (
 				<AiFillLinkedin className="hover:text-primary-gold transition-all duration-300 text-3xl" />
 			),
@@ -35,40 +40,24 @@ export default () => {
 		<footer className="pt-10 mx-auto border border-t border-alternative-gold">
 			<div className="max-w-screen-xl mx-auto px-4  md:px-8">
 				<div className="justify-center sm:flex">
-					<div className="space-y-6">
+					<div className="space-y-6 cursor-pointer">
 						<Image
 							src="/media/logos/ezdev-logo.png"
 							alt="ez-dev logo"
 							height={300}
 							width={200}
 							className=" mx-auto "
-							// className="w-55 mx-auto "
+							onClick={() => push("/")}
 						/>
-						{/* <p className="max-w-md text-center ">
-							Nulla auctor metus vitae lectus iaculis, vel euismod massa
-							efficitur.
-						</p> */}
+
 						<ul className="flex flex-wrap items-center gap-4 text-sm 2xl:text-xl sm:text-base justify-center ">
 							{footerNavs.map((item, idx) => (
-								<li key={idx}className=" hover:text-primary-gold duration-150">
-									<Link  href={item.href}>
-										{item.name}
-									</Link>
+								<li key={idx} className=" hover:text-primary-gold duration-150">
+									<Link href={item.href}>{item.name}</Link>
 								</li>
 							))}
 						</ul>
 					</div>
-					{/* <div className="mt-6">
-						<p className="text-center md:text-left font-semibold">Get the app</p>
-						<div className="flex items-center gap-3 mt-3 sm:block justify-center md:justify-start">
-							<Link href="#">
-								<AiFillGithub className="hover:text-[#a4804b] transition-all duration-300 text-3xl" />
-							</Link>
-							<Link href="#" className="mt-0 block sm:mt-3">
-								<AiFillLinkedin className="hover:text-[#a4804b] transition-all duration-300 text-3xl" />
-							</Link>
-						</div>
-					</div> */}
 				</div>
 				<div className="mt-10 py-10 border-t border-alternative-gold text-center">
 					<p>

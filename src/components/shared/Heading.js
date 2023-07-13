@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation";
 import Lottie from "react-lottie-player";
 
-const Heading = ({ animationData, content }) => {
+const Heading = ({ animationData, content, subtitle }) => {
 	const pathname = usePathname();
 
 	return (
@@ -10,7 +10,7 @@ const Heading = ({ animationData, content }) => {
 			<div
 				className={`px-6 py-6 m-auto ${
 					pathname == "/"
-						? "border border-top border-bottom border-primary-gold"
+						? "border-t border-b border-primary-gold"
 						: "mt-9"
 				}`}
 			>
@@ -27,7 +27,10 @@ const Heading = ({ animationData, content }) => {
 					</div>
 
 					<div className=" h-full md:inline ">
-						<h3 className="md:mt-14 lg:text-3xl md:text-3xl xl:text-4xl text-2xl font-black md:text-left text-center">
+						<h3 className="md:mt-14 lg:text-xl md:text-md xl:text-2xl text-xl font-base md:text-left text-center text-alternative-gold">
+							{subtitle}
+						</h3>
+						<h3 className=" lg:text-3xl md:text-3xl xl:text-4xl text-2xl font-bold md:text-left text-center">
 							{content}
 						</h3>
 					</div>

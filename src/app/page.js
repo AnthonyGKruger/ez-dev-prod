@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "@/components/about/Hero";
 import Skills from "./skills/page";
 import Qualifications from "./qualifications/page";
@@ -7,6 +6,8 @@ import Languages from "./languages/page";
 
 export const metadata = {
   title: 'Home - Anthony Gordon Kruger\'s Portfolio',
+	description:"EZdev portfolio",
+	viewport:"width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0",
   icons: [
     { rel: 'icon', url: '/favicon.png' },
     { rel: 'apple', url: '/favicon.png' },

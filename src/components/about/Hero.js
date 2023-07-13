@@ -17,14 +17,14 @@ const Hero = () => {
 							/>
 						</div>
 					</div>
-					<div className="col-span-4 lg:col-span-7 text-center lg:text-left">
-						<h1 className="text-4xl text-alternative-gold font-extrabold">
+					<div className="col-span-4 lg:col-span-7">
+						<h1 className="text-4xl text-alternative-gold md:font-extrabold text-center lg:text-left">
 							Hi There!
 						</h1>
 						{/* <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
 						We help startups to grow and make money
 					</h2> */}
-						<p className="text-lg tracking-wide mt-5">
+						<p className="text-lg tracking-wide mt-5 ">
 							I'm an ambitious and determined individual with a Bachelor's
 							degree in information technology and three years of experience in
 							web development. As a successful retail branch manager, I've honed
@@ -40,9 +40,9 @@ const Hero = () => {
 							with family and friends. I'm excited about the opportunities ahead
 							and look forward to connecting with like-minded professionals.
 						</p>
-						<div className="pt-9 ">
-							<button className="hover:scale-105 mx-auto text-center   font-black border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-4  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
-								<Link href="/" className="font-black text-lg tracking-wide ">Let's Chat!</Link>
+						<div className="pt-9">
+							<button className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-4  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
+								<Link href="/" className="font-base text-lg tracking-wide ">Let's Chat!</Link>
 							</button>
 						</div>
 					</div>
