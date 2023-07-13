@@ -3,6 +3,7 @@ import Heading from "@/components/shared/Heading";
 import QualificationItem from "@/components/qualifications/QualificationItem";
 import animationData from "@/lotties/Education.json";
 import { useState, useEffect } from "react";
+import Loader from "@/components/shared/Loader";
 
 const QualificationsContent = () => {
 	const [mappedQualifications, setMappedQualifications] = useState();
@@ -54,6 +55,7 @@ const QualificationsContent = () => {
 				subtitle={"Always Leveling Up"}
 				content={"Have A Look At My Qualifications 👇"}
 			/>
+				{!mappedQualifications && <Loader/>}
 			<section className="py-9">{mappedQualifications}</section>
 		</>
 	);

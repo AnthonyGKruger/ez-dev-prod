@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Heading from "@/components/shared/Heading";
 import animationData from "@/lotties/Portfolio.json";
+import Loader from "@/components/shared/Loader";
 
 const PortfolioContent = () => {
-	const [mappedPortfolioItems, setMappedPortfolioItems] = useState([]);
+	const [mappedPortfolioItems, setMappedPortfolioItems] = useState(null);
 
 	const fetchPortfolioData = async () => {
 		const response = await fetch("/api/portfolio");
@@ -128,6 +129,7 @@ const PortfolioContent = () => {
 			/>
 			<section className="py-14">
 				<div className="container px-6 m-auto">
+					{!mappedPortfolioItems && <Loader />}
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12">
 						{mappedPortfolioItems}
 					</div>

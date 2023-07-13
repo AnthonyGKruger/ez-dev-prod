@@ -3,6 +3,7 @@ import Heading from "@/components/shared/Heading";
 import WorkExperienceItem from "@/components/workExperience/WorkExperienceItem";
 import animationData from "@/lotties/workExperience.json";
 import { useState, useEffect } from "react";
+import Loader from "@/components/shared/Loader";
 
 const WorkExperienceContent = () => {
 	const [mappedExperience, setMappedExperience] = useState();
@@ -40,6 +41,9 @@ const WorkExperienceContent = () => {
 				subtitle={"Hard Work & Perseverance"}
 				content={"Check Out My Work Experience Below 💪"}
 			/>
+
+			{!mappedExperience && <Loader />}
+
 			<section className="py-9">{mappedExperience}</section>
 		</>
 	);
