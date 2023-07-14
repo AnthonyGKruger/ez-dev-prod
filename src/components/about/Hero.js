@@ -96,7 +96,7 @@ const Hero = () => {
 									<Image
 										src={"/media/AnthonyIllustrated.jpeg"}
 										alt="Anthony Kruger"
-										className="rounded-full shadow-lg shadow-primary-blue hover:shadow-xl hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 hover:scale-110 "
+										className="rounded-full shadow md:shadow-lg shadow-primary-blue md:hover:shadow-xl hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 md:hover:scale-110 "
 										width={400}
 										height={400}
 									/>
