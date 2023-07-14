@@ -92,11 +92,11 @@ const Hero = () => {
 								className="card max-w-full overflow-hidden"
 								variants={cardVariants}
 							>
-								<div className="w-full h-full flex mb-9 z-50">
+								<div className="w-full h-full flex mb-9 md:hover:h-full">
 									<Image
 										src={"/media/AnthonyIllustrated.jpeg"}
 										alt="Anthony Kruger"
-										className="rounded-full shadow md:shadow-lg shadow-primary-blue md:hover:shadow-xl hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 md:hover:scale-110 "
+										className="rounded-full shadow-lg xl:shadow-xl lg:shadow-xl  shadow-primary-blue hover:shadow-md hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 hover:relative"
 										width={400}
 										height={400}
 									/>
