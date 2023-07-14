@@ -41,12 +41,12 @@ const WorkExperienceItem = ({
 
 	return (
 		<motion.div
-			className="card-container"
+			className="card-container max-w-full overflow-hidden"
 			initial="offscreen"
 			whileInView="onscreen"
 			viewport={{ once: true, amount: 0.8 }}
 		>
-			<motion.div className="card" variants={cardVariants}>
+			<motion.div className="card max-w-full overflow-hidden" variants={cardVariants}>
 				<div
 					className={`mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] pl-2 my-14 border-l-4 border-primary-blue`}
 				>

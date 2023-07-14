@@ -3,7 +3,7 @@ import Heading from "@/components/shared/Heading";
 
 const PrivacyPolicyContent = () => {
   return (
-    <article className="max-w-2xl mx-auto px-5 py-9">
+    <article className="2xl:max-w-7xl xl:max-w-4xl max-w-2xl mx-auto px-5 py-9">
       <Heading
         animationData={animationData}
         subtitle={'All About Privacy'}
@@ -16,13 +16,13 @@ const PrivacyPolicyContent = () => {
       </p>
       <p className="text-xl font-semibold mb-3">Topics:</p>
       <ul className="list-disc pl-8 mb-6">
-        <li><a href="#what">What information do I collect about you?</a></li>
-        <li><a href="#how">How will I use the information about you?</a></li>
-        <li><a href="#information">Access to your information and corrections</a></li>
-        <li><a href="#cookies">Cookies</a></li>
-        <li><a href="#other">Other websites</a></li>
-        <li><a href="#review">Changes to my privacy policy</a></li>
-        <li><a href="#contact">How to contact me</a></li>
+        <li><a href="#what" className="hover:text-primary-gold">What information do I collect about you?</a></li>
+        <li><a href="#how" className="hover:text-primary-gold">How will I use the information about you?</a></li>
+        <li><a href="#information" className="hover:text-primary-gold">Access to your information and corrections</a></li>
+        <li><a href="#cookies" className="hover:text-primary-gold">Cookies</a></li>
+        <li><a href="#other" className="hover:text-primary-gold">Other websites</a></li>
+        <li><a href="#review" className="hover:text-primary-gold">Changes to my privacy policy</a></li>
+        <li><a href="#contact" className="hover:text-primary-gold">How to contact me</a></li>
       </ul>
       <p  id="what" className="text-xl font-semibold">
         What information do I collect about you?
@@ -81,7 +81,8 @@ const PrivacyPolicyContent = () => {
         Please contact me if you have any questions about my privacy policy or the
         information I hold about you.
       </p>
-      <p className=""><a href="mailto:anthony@ezdev.solutions">Email: anthony@ezdev.solutions</a></p>
+      <p className="hover:text-primary-gold"><a href="mailto:anthony@ezdev.solutions">Email: anthony@ezdev.solutions</a></p>
+
     </article>
   );
 };

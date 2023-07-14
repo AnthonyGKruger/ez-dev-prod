@@ -1,5 +1,4 @@
-// 'use client'
-import { useRouter } from "next/router";
+'use client'
 import useDownloader from "react-use-downloader";
 import { redirect } from "next/navigation";
 

@@ -7,6 +7,9 @@ import ResumeRequest from "@/components/shared/ResumeRequest";
 import { useDispatch, useSelector } from "react-redux";
 import { contactMeActions } from "@/store/contactMe-slice";
 import animationData from "@/lotties/ContactMe.json";
+import Heading from "@/components/shared/Heading";
+import contactMeHeadingAnimationData from "@/lotties/contact-me-heading.json";
+
 
 const ContactMeContent = () => {
 	const dispatch = useDispatch();
@@ -165,6 +168,11 @@ const ContactMeContent = () => {
 	};
 	return (
 		<>
+		<Heading
+					animationData={contactMeHeadingAnimationData}
+					content={"Fill In The Form Below To Contact Me"}
+					subtitle={"Let's Build Something Together!"}
+				/>
 			{contactFormState.error && < ErrorBanner/>}
 			{contactFormState.formHasErrors && <WarningBanner />}
 			<div className={`py-20 grid grid-cols-2 lg:grid-cols-4 w-11/12 mx-auto`}>

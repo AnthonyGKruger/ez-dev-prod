@@ -18,7 +18,7 @@ const imageSize = 50;
 	const companyLogos = companies.map((company) => {
 		return (
 			<div
-				className="col-span-2 md:col-span-2 flex align-items-center justify-center p-4 "
+				className="col-span-4 md:col-span-2 flex align-items-center justify-center p-4 "
 				key={company.name}
 			>
 				<Image
@@ -36,7 +36,7 @@ const imageSize = 50;
 	});
 
 	return (
-		<section className="bg-white lg:py-28">
+		<section className="bg-white py-9 lg:py-28">
 			<div className="text-center mb-14">
 				<h2 className="text-primary-blue font-extrabold text-3xl my-3 px-9">
 					Some Of The Awesome Companies That I Have Worked With

@@ -2,9 +2,10 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Heading from "@/components/shared/Heading";
 import animationData from "@/lotties/Portfolio.json";
 import Loader from "@/components/shared/Loader";
+import ContactMeContent from "../contactMe/Content";
+import Heading from "@/components/shared/Heading";
 
 const PortfolioContent = () => {
 	const [mappedPortfolioItems, setMappedPortfolioItems] = useState(null);
@@ -88,7 +89,7 @@ const PortfolioContent = () => {
 						onClick={handleClick}
 					>
 						<motion.div
-							className="h-full p-9 overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl shadow-primary-blue hover:shadow-primary-gold border border-primary-gold duration-300 flex flex-col justify-center"
+							className="h-full p-9  overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl shadow-primary-blue hover:shadow-primary-gold border border-primary-gold duration-300 flex flex-col justify-center"
 							variants={cardVariants}
 						>
 							<div className="flex justify-center items-center h-full">
@@ -127,13 +128,15 @@ const PortfolioContent = () => {
 				content={"Check Out My Portfolio Below"}
 				subtitle={"Dominating The Web One Project At A Time"}
 			/>
-			<section className="py-14">
+			<section className="py-14 ">
 				<div className="container px-6 m-auto">
 					{!mappedPortfolioItems && <Loader />}
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12">
 						{mappedPortfolioItems}
 					</div>
 				</div>
+				
+				<ContactMeContent />
 			</section>
 		</>
 	);

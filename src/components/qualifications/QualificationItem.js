@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PiCertificate } from "react-icons/pi";
-import { HiLocationMarker } from "react-icons/hi";
+import { FaUniversity } from "react-icons/fa";
 import { FaScroll } from "react-icons/fa";
 import { BsCalendar3 } from "react-icons/bs";
 import { BiMedal } from "react-icons/bi";
@@ -62,17 +62,17 @@ const QualificationItem = ({
 
 	return (
 		<motion.div
-			className="card-container"
+			className="card-container max-w-full overflow-hidden"
 			initial="offscreen"
 			whileInView="onscreen"
 			viewport={{ once: true, amount: 0.8 }}
 		>
-			<motion.div className="card" variants={cardVariants}>
+			<motion.div className="card max-w-full overflow-hidden" variants={cardVariants}>
 				<div
 					className={`mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] pl-2 my-14 border-l-4 border-primary-blue`}
 				>
 					<div className={`py-2 px-2 grid grid-cols-12 lg:grid-cols-12`}>
-						<HiLocationMarker className="col-span-2 lg:col-span-1 text-3xl self-center text-red-600" />
+						<FaUniversity className="col-span-2 lg:col-span-1 text-3xl self-center text-stone-600" />
 						<span className="col-span-10 lg:col-span-11 self-center lg:text-3xl text-2xl">
 							{institution}
 						</span>

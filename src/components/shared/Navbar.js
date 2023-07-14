@@ -35,16 +35,17 @@ const Navbar = () => {
 					</Link>
 					<Link
 						className={`${linkClasses} hidden lg:inline`}
-						href="/work-experience"
-					>
-						Work Experience
-					</Link>
-					<Link
-						className={`${linkClasses} hidden lg:inline`}
 						href="/qualifications"
 					>
 						Qualifications
 					</Link>
+					<Link
+						className={`${linkClasses} hidden lg:inline`}
+						href="/work-experience"
+					>
+						Work Experience
+					</Link>
+
 					<Link className={`${linkClasses} hidden lg:inline`} href="/languages">
 						Languages
 					</Link>
@@ -61,4 +62,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

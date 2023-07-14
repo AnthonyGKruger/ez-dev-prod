@@ -44,7 +44,7 @@ const WorkExperienceContent = () => {
 
 			{!mappedExperience && <Loader />}
 
-			<section className="py-9">{mappedExperience}</section>
+			<section className="py-9 max-w-full overflow-hidden">{mappedExperience}</section>
 		</>
 	);
 };
