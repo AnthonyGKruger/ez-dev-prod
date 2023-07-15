@@ -34,7 +34,7 @@ export default () => {
 				<AiFillLinkedin className="hover:text-primary-gold transition-all duration-300 text-3xl" />
 			),
 		},
-	];
+	]; 
 
 	return (
 		<footer className="pt-10 mx-auto border border-t border-alternative-gold">

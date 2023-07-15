@@ -9,7 +9,7 @@ import { contactMeActions } from "@/store/contactMe-slice";
 import animationData from "@/lotties/ContactMe.json";
 import Heading from "@/components/shared/Heading";
 import contactMeHeadingAnimationData from "@/lotties/contact-me-heading.json";
-
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const ContactMeContent = () => {
 	const dispatch = useDispatch();
@@ -168,12 +168,12 @@ const ContactMeContent = () => {
 	};
 	return (
 		<>
-		<Heading
-					animationData={contactMeHeadingAnimationData}
-					content={"Fill In The Form Below To Contact Me"}
-					subtitle={"Let's Build Something Together!"}
-				/>
-			{contactFormState.error && < ErrorBanner/>}
+			<Heading
+				animationData={contactMeHeadingAnimationData}
+				content={"Fill In The Form Below To Contact Me"}
+				subtitle={"Let's Build Something Together!"}
+			/>
+			{contactFormState.error && <ErrorBanner />}
 			{contactFormState.formHasErrors && <WarningBanner />}
 			<div className={`py-20 grid grid-cols-2 lg:grid-cols-4 w-11/12 mx-auto`}>
 				<div className={`col-span-2  self-center`}>
@@ -301,7 +301,7 @@ const ContactMeContent = () => {
 									className="w-10 h-10 animate animate-spin mt-5"
 								>
 									<title id="title-04a">Loading</title>
-							<desc id="desc-04a">Loading</desc>
+									<desc id="desc-04a">Loading</desc>
 									<circle
 										cx="12"
 										cy="12"
@@ -319,6 +319,13 @@ const ContactMeContent = () => {
 						</form>
 					</article>
 					<ResumeRequest />
+					<h2 className={`text-xl `}>
+						You can also reach me through the below platforms:
+					</h2>
+					<div className="mt-5 flex flex-wrap items-center gap-4 text-sm 2xl:text-xl sm:text-base  ">
+						<AiFillLinkedin className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
+						<AiFillGithub className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
+					</div>
 				</div>
 			</div>
 		</>
