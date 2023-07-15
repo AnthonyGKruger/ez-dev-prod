@@ -48,7 +48,7 @@ const WorkExperienceItem = ({
 		>
 			<motion.div className="card max-w-full overflow-hidden" variants={cardVariants}>
 				<div
-					className={`mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] pl-2 my-14 border-l-4 border-primary-blue`}
+					className={`mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] pl-2 my-5 border-l-4 border-primary-blue`}
 				>
 					<div className={`py-2 px-2 grid grid-cols-12  lg:grid-cols-12`}>
 						<FaSuitcase className="col-span-2 lg:col-span-1 text-3xl self-center text-amber-900" />

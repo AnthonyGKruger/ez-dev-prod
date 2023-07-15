@@ -56,7 +56,7 @@
 
 // export default Hero;
 
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -64,7 +64,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
 	const cardVariants = {
 		offscreen: {
-			x:  -4000 ,
+			x: -4000,
 		},
 		onscreen: {
 			x: 0,
@@ -78,7 +78,7 @@ const Hero = () => {
 	};
 
 	return (
-		<section className="py-28">
+		<section className="lg:py-20">
 			<div className="container px-6 m-auto">
 				<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">
 					<div className="col-span-4 lg:col-span-5 ">
@@ -92,11 +92,15 @@ const Hero = () => {
 								className="card max-w-full overflow-hidden"
 								variants={cardVariants}
 							>
-								<div className="w-full h-full flex mb-9 md:hover:h-full">
+								<div className="w-full h-full flex py-9 xl:py-9 lg:py-14 px-9 bg-transparent">
+								{/* <div className="w-full h-full flex mb-9 bg-transparent"> */}
 									<Image
 										src={"/media/AnthonyIllustrated.jpeg"}
 										alt="Anthony Kruger"
-										className="rounded-full shadow-lg xl:shadow-xl lg:shadow-xl  shadow-primary-blue hover:shadow-md hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 hover:relative"
+										className={`rounded-full shadow-xl shadow-primary-blue hover:shadow-primary-gold
+										 border border-primary-gold hover:border-primary-blue self-center
+										  mx-auto transition-all duration-500 hover:relative`}
+										// className="rounded-full shadow-lg xl:shadow-xl lg:shadow-xl  shadow-primary-blue hover:shadow-md hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 hover:relative"
 										width={400}
 										height={400}
 									/>
@@ -104,7 +108,7 @@ const Hero = () => {
 							</motion.div>
 						</motion.div>
 					</div>
-					<div className="col-span-4 lg:col-span-7">
+					<div className="col-span-4 lg:col-span-7 bg-transparent">
 						<h1 className="text-4xl text-alternative-gold md:font-extrabold text-center lg:text-left">
 							Hi There!
 						</h1>
