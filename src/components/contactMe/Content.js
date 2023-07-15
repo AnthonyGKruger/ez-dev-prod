@@ -10,6 +10,7 @@ import animationData from "@/lotties/ContactMe.json";
 import Heading from "@/components/shared/Heading";
 import contactMeHeadingAnimationData from "@/lotties/contact-me-heading.json";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Link from "next/link";
 
 const ContactMeContent = () => {
 	const dispatch = useDispatch();
