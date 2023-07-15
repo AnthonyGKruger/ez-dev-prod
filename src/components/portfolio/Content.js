@@ -99,7 +99,9 @@ const PortfolioContent = () => {
 											src={portfolioItem.image}
 											alt={portfolioItem.title}
 											className="object-contain w-full h-full"
-											layout="fill"
+											width={300}
+											height={300}
+											// layout="fill"
 										/>
 									</div>
 								</div>

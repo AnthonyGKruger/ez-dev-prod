@@ -11,9 +11,10 @@ const Navbar = () => {
 					<Image
 						src="/media/logos/ezdev-logo.png"
 						alt="ez-dev logo"
-						layout="responsive"
-						width={50}
-						height={50}
+						// layout="responsive"
+						width={200}
+						height={200}
+						className="object-contain w-auto h-auto"
 					/>
 				</div>
 			</Link>
