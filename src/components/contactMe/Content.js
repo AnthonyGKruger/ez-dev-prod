@@ -323,8 +323,15 @@ const ContactMeContent = () => {
 						You can also reach me through the below platforms:
 					</h2>
 					<div className="mt-5 flex flex-wrap items-center gap-4 text-sm 2xl:text-xl sm:text-base  ">
-						<AiFillLinkedin className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
-						<AiFillGithub className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
+						<Link
+							target="_blank"
+							href="https://www.linkedin.com/in/anthony-gordon-kruger-ezdev/"
+						>
+							<AiFillLinkedin className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
+						</Link>
+						<Link target="_blank" href="https://github.com/AnthonyGKruger">
+							<AiFillGithub className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
+						</Link>
 					</div>
 				</div>
 			</div>
