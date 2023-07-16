@@ -4,7 +4,7 @@ export const GET = async (request) => {
 			id: "p3",
 			title: "Digital Stream",
 			description:
-				"Digital marketing agency website built using NextJS and Tailwind Css",
+				"Digital marketing agency website built using NextJS and Tailwind Css \n(the code to for this project is unfortunately not available for public viewing)",
 			link: "https://ez-staging-ds.vercel.app",
 			image: "/media/logos/ds-logo.png",
 			sourceCode: "",

@@ -38,7 +38,7 @@ export default () => {
 
 	return (
 		<footer className="pt-10 mx-auto border border-t border-alternative-gold">
-			<div className="max-w-screen-xl mx-auto ">
+			<div className="mx-auto ">
 			{/* <div className="max-w-screen-xl mx-auto px-4  md:px-8"> */}
 				<div className="justify-center sm:flex">
 					<div className="space-y-6 cursor-pointer">
@@ -60,7 +60,7 @@ export default () => {
 						</ul>
 					</div>
 				</div>
-				<div className="mt-10 py-10 border-t border-alternative-gold text-center bg-alternative-blue text-white">
+				<div className="mt-10 py-5 border-t border-alternative-gold text-center bg-alternative-blue text-white">
 					<p>
 						© {new Date().getFullYear() + " "}
 						<Link href="/" className="hover:text-light-gold duration-150">

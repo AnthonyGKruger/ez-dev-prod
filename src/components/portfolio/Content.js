@@ -40,37 +40,37 @@ const PortfolioContent = () => {
 						amount = 0;
 						break;
 					case 1:
-						amount = 0.3;
+						amount = 0.1;
 						break;
 					case 2:
-						amount = 0.6;
+						amount = 0.2;
 						break;
 					case 3:
-						amount = 0.9;
+						amount = 0.3;
 						break;
 					case 4:
-						amount = 0;
+						amount = 0.4;
 						break;
 					case 5:
-						amount = 0.3;
+						amount = 0.5;
 						break;
 					case 6:
 						amount = 0.6;
 						break;
 					case 7:
-						amount = 0.9;
+						amount = 0.7;
 						break;
 					case 8:
-						amount = 0;
+						amount = 0.8;
 						break;
 					case 9:
-						amount = 0.3;
+						amount = 0.9;
 						break;
 					case 10:
-						amount = 0.6;
+						amount = 1;
 						break;
 					case 11:
-						amount = 0.9;
+						amount = 1;
 						break;
 					default:
 						amount = 0;
@@ -83,7 +83,7 @@ const PortfolioContent = () => {
 				return (
 					<motion.div
 						key={idx}
-						className="col-span-4 md:col-span-2 lg:col-span-6 xl:col-span-3 self-center h-full cursor-pointer"
+						className="col-span-4 md:col-span-2 lg:col-span-6 xl:col-span-4 self-center h-full cursor-pointer"
 						initial="offscreen"
 						whileInView="onscreen"
 						viewport={{ once: true, amount: amount }}
@@ -119,7 +119,7 @@ const PortfolioContent = () => {
 								<button className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
 									<Link
 										href={portfolioItem.link}
-										className="font-base text-lg tracking-wide flex "
+										className="font-base text-base tracking-wide flex "
 										target="_blank"
 									>
 										<GoBrowser className="inline self-center mr-2" />
@@ -129,8 +129,8 @@ const PortfolioContent = () => {
 								{portfolioItem.sourceCode ? (
 									<button className="ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
 										<Link
-											href="/contact-me"
-											className="font-base text-lg tracking-wide flex"
+											href={portfolioItem.sourceCode}
+											className="font-base text-base tracking-wide flex"
 											target="_blank"
 										>
 											<BsCodeSlash className="inline self-center mr-2" />
@@ -160,7 +160,7 @@ const PortfolioContent = () => {
 			<section className="py-14 bg-alternative-blue">
 				<div className="container px-6 m-auto">
 					{!mappedPortfolioItems && <Loader />}
-					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12">
+					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">
 						{mappedPortfolioItems}
 					</div>
 				</div>
