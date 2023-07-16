@@ -35,7 +35,7 @@ const Hero = () => {
 								variants={cardVariants}
 							>
 								<div className="w-full h-full flex py-9 xl:py-9 lg:py-14 px-9 bg-transparent">
-								{/* <div className="w-full h-full flex mb-9 bg-transparent"> */}
+									{/* <div className="w-full h-full flex mb-9 bg-transparent"> */}
 									<Image
 										src={"/media/AnthonyIllustrated.jpeg"}
 										alt="Anthony Kruger"
@@ -52,7 +52,7 @@ const Hero = () => {
 						</motion.div>
 					</div>
 					<div className="col-span-4 lg:col-span-7 bg-transparent">
-					<h1 className="text-5xl text-light-gold md:font-extrabold text-center lg:text-left">
+						<h1 className="text-5xl text-light-gold md:font-extrabold text-center lg:text-left">
 							About Me!
 						</h1>
 						{/* <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
@@ -75,10 +75,10 @@ const Hero = () => {
 							and look forward to connecting with like-minded professionals.
 						</p>
 						<div className="pt-9">
-						<button className="hover:scale-105 mx-auto text-center  border-2 border-light-gold hover:border-primary-gold rounded-xl px-5 py-4  pointer bg-primary-blue/50 hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
+							<button className="hover:scale-105 mx-auto text-center  border-2 border-light-gold hover:border-primary-gold rounded-xl px-5 py-4  pointer bg-primary-blue/50 hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
 								<Link
 									href="/contact-me"
-									className="font-base text-lg tracking-wide "
+									className="font-base text-xl tracking-wide "
 								>
 									Let's Chat!
 								</Link>
