@@ -75,7 +75,7 @@ const Hero = () => {
 							and look forward to connecting with like-minded professionals.
 						</p>
 						<div className="pt-9">
-							<button className="hover:scale-105 mx-auto text-center  border-2 border-light-gold hover:border-primary-gold rounded-xl px-5 py-4  pointer bg-primary-blue/50 hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
+						<button className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-gold rounded-full px-5 py-4  pointer bg-light-gold hover:bg-white text-alternative-blue hover:text-alternative-gold duration-300">
 								<Link
 									href="/contact-me"
 									className="font-bold text-xl tracking-wide "
