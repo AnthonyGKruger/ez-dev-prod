@@ -131,7 +131,7 @@ const SkillsList = () => {
 				transition={{ type: "spring", stiffness: 400, damping: 50 }}
 			>
 				<motion.div className="max-w-full" variants={cardVariants}>
-					<div className="max-w-full overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl shadow-primary-blue hover:shadow-primary-gold border border-primary-gold duration-300">
+					<div className="max-w-full overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-lg hover:shadow-xl shadow-alternative-blue hover:shadow-secondary-gold border border-primary-gold duration-300">
 						<figure className="p-9 pb-0 text-center">{skill.icon}</figure>
 
 						<div className="p-6">
@@ -149,7 +149,7 @@ const SkillsList = () => {
 				animationData={animationData}
 				content={"Some Of The Skills & Awesome Technologies I Use!"}
 			/>
-			<section className="py-14 md:py-28">
+			<section className="py-14 md:py-28 bg-primary-blue">
 				<div className="container px-6 m-auto">
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
 						{cards}

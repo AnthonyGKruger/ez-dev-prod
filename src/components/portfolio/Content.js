@@ -2,10 +2,13 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { GoBrowser } from "react-icons/go";
+import { BsCodeSlash } from "react-icons/bs";
+import Heading from "@/components/shared/Heading";
 import animationData from "@/lotties/Portfolio.json";
 import Loader from "@/components/shared/Loader";
 import ContactMeContent from "../contactMe/Content";
-import Heading from "@/components/shared/Heading";
 
 const PortfolioContent = () => {
 	const [mappedPortfolioItems, setMappedPortfolioItems] = useState(null);
@@ -23,7 +26,7 @@ const PortfolioContent = () => {
 				transition: {
 					type: "spring",
 					bounce: 0.4,
-					duration: 1.5,
+					duration: 1,
 				},
 			},
 		};
@@ -84,12 +87,12 @@ const PortfolioContent = () => {
 						initial="offscreen"
 						whileInView="onscreen"
 						viewport={{ once: true, amount: amount }}
-						whileHover={{ scale: 1.1 }}
+						whileHover={{ scale: 1.05 }}
 						transition={{ type: "spring", stiffness: 400, damping: 50 }}
 						onClick={handleClick}
 					>
 						<motion.div
-							className="h-full p-9  overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl shadow-primary-blue hover:shadow-primary-gold border border-primary-gold duration-300 flex flex-col justify-center"
+							className="h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl shadow-light-blue hover:shadow-primary-gold border border-primary-gold duration-300 flex flex-col justify-center"
 							variants={cardVariants}
 						>
 							<div className="flex justify-center items-center h-full">
@@ -106,12 +109,36 @@ const PortfolioContent = () => {
 									</div>
 								</div>
 							</div>
-							<dl className="mt-2 text-sm leading-normal">
+							<dl className="mt-5 text-sm leading-normal">
 								<dt className="sr-only">Description</dt>
-								<dd className="text-gray 2xl:text-xl">
+								<dd className="text-gray 2xl:text-xl text-left">
 									{portfolioItem.description}
 								</dd>
 							</dl>
+							<div className="pt-9">
+								<button className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
+									<Link
+										href={portfolioItem.link}
+										className="font-base text-lg tracking-wide flex "
+										target="_blank"
+									>
+										<GoBrowser className="inline self-center mr-2" />
+										<span className="inline">View</span>
+									</Link>
+								</button>
+								{portfolioItem.sourceCode ? (
+									<button className="ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
+										<Link
+											href="/contact-me"
+											className="font-base text-lg tracking-wide flex"
+											target="_blank"
+										>
+											<BsCodeSlash className="inline self-center mr-2" />
+											<span className="inline">Code</span>
+										</Link>
+									</button>
+								) : null}
+							</div>
 						</motion.div>
 					</motion.div>
 				);
@@ -130,16 +157,15 @@ const PortfolioContent = () => {
 				content={"Check Out My Portfolio Below"}
 				subtitle={"Dominating The Web One Project At A Time"}
 			/>
-			<section className="py-14 ">
+			<section className="py-14 bg-alternative-blue">
 				<div className="container px-6 m-auto">
 					{!mappedPortfolioItems && <Loader />}
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12">
 						{mappedPortfolioItems}
 					</div>
 				</div>
-				
-				<ContactMeContent />
 			</section>
+			<ContactMeContent />
 		</>
 	);
 };

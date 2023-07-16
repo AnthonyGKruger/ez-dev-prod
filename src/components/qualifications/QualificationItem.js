@@ -35,7 +35,7 @@ const QualificationItem = ({
 			return (
 				<div
 					key={idx}
-					className={`md:text-xl px-3 py-2 mb-2 mr-2 inline rounded-xl border-2 border-primary-gold hover:border-primary-blue bg-primary-blue hover:bg-white text-light-gold hover:text-primary-blue duration-300`}
+					className={`md:text-md px-3 py-2 mb-2 mr-2 inline rounded-xl border-2 border-primary-gold hover:border-primary-blue bg-primary-blue hover:bg-white text-light-gold hover:text-primary-blue duration-300`}
 				>
 					<Link
 						// style={{ textDecoration: "none", color: "#F1D6B0" }}
@@ -62,14 +62,14 @@ const QualificationItem = ({
 
 	return (
 		<motion.div
-			className="card-container max-w-full overflow-hidden"
+			className="card-container max-w-full overflow-hidden "
 			initial="offscreen"
 			whileInView="onscreen"
 			viewport={{ once: true, amount: 0.8 }}
 		>
-			<motion.div className="card max-w-full overflow-hidden" variants={cardVariants}>
+			<motion.div className="card max-w-full overflow-hidden " variants={cardVariants}>
 				<div
-					className={`mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] pl-2 my-5 border-l-4 border-primary-blue`}
+					className={`bg-white rounded-xl mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%]  my-5 border-4 border-primary-blue`}
 				>
 					<div className={`py-2 px-2 grid grid-cols-12 lg:grid-cols-12`}>
 						<FaUniversity className="col-span-2 lg:col-span-1 text-3xl self-center text-stone-600" />
@@ -104,7 +104,7 @@ const QualificationItem = ({
 					
 						</div>
 					</div>
-					<div className="pt-3 grid grid-cols-1 lg:grid-cols-2">{mappedComments}</div>{" "}
+					<div className="p-3 pb-0 grid grid-cols-1 lg:grid-cols-2">{mappedComments}</div>{" "}
 					{/* <div className="pt-3 grid grid-cols-2">{mappedComments}</div> */}
 				</div>
 			</motion.div>

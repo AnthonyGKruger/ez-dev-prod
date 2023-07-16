@@ -3,24 +3,20 @@ export const GET = async (request) => {
 		{
 			id: "p3",
 			title: "Digital Stream",
-			description: "Digital marketing agency website built using NextJS and Tailwind Css",
+			description:
+				"Digital marketing agency website built using NextJS and Tailwind Css",
 			link: "https://ez-staging-ds.vercel.app",
 			image: "/media/logos/ds-logo.png",
+			sourceCode: "",
 		},
 		{
 			id: "p1",
 			title: "Mumbi Trust Administrators",
-			description: "Accounting firm website built using NextJS and Tailwind Css",
+			description:
+				"Accounting firm website built using NextJS and Tailwind Css",
 			link: "https://mumbi.co.za",
 			image: "/media/logos/mumbi-logo.png",
-		},
-		{
-			id: "p2",
-			title: "Digital Payment Transformation Services",
-			description:
-				"Ecommerce app built using Wordpress and Woocommerce - (still under development.)",
-			link: "https://dpts.co.za",
-			image: "/media/logos/DPTS.png",
+			sourceCode: "https://github.com/AnthonyGKruger/Mumbi-Trust-Administrators",
 		},
 
 		{
@@ -29,6 +25,25 @@ export const GET = async (request) => {
 			description: "Fan Catalogue built using NextJs and Tailwind CSS.",
 			link: "https://tlwfans.vercel.app",
 			image: "/media/logos/TLW-logo.jpg",
+			sourceCode: "https://github.com/AnthonyGKruger/TLWfans",
+		},
+		{
+			id: "p5",
+			title: "Star Wars E-commerce App",
+			description:
+				"Ecommerce app built NextJS and TailWind CSS - (still under development.)",
+			link: "https://swapi-ecommerce.vercel.app/",
+			image: "/media/logos/star-wars-logo.svg",
+			sourceCode: "https://github.com/AnthonyGKruger/swapi-ecommerce",
+		},
+		{
+			id: "p2",
+			title: "Digital Payment Transformation Services",
+			description:
+				"Ecommerce app built using Wordpress and Woocommerce - (still under development.)",
+			link: "https://dpts.co.za",
+			image: "/media/logos/DPTS.png",
+			sourceCode: "",
 		},
 	];
 	return new Response(JSON.stringify(responseData), {
