@@ -76,8 +76,12 @@ const PortfolioContent = () => {
 						amount = 0;
 				}
 
-				const handleClick = () => {
+				const handleClickForSiteViewing = () => {
 					window.open(portfolioItem.link, "_blank");
+				};
+
+				const handleClickForCodeViewing = () => {
+					window.open(portfolioItem.sourceCode, "_blank");
 				};
 
 				return (
@@ -89,7 +93,7 @@ const PortfolioContent = () => {
 						viewport={{ once: true, amount: amount }}
 						whileHover={{ scale: 1.05 }}
 						transition={{ type: "spring", stiffness: 400, damping: 50 }}
-						onClick={handleClick}
+						onClick={handleClickForSiteViewing}
 					>
 						<motion.div
 							className="h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl shadow-light-blue hover:shadow-primary-gold border border-primary-gold duration-300 flex flex-col justify-center"
@@ -116,7 +120,10 @@ const PortfolioContent = () => {
 								</dd>
 							</dl>
 							<div className="pt-9">
-								<button className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
+								<button
+									onClick={handleClickForSiteViewing}
+									className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300"
+								>
 									<Link
 										href={portfolioItem.link}
 										className="font-base text-base tracking-wide flex "
@@ -127,7 +134,10 @@ const PortfolioContent = () => {
 									</Link>
 								</button>
 								{portfolioItem.sourceCode ? (
-									<button className="ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
+									<button
+										onClick={handleClickForCodeViewing}
+										className="ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300"
+									>
 										<Link
 											href={portfolioItem.sourceCode}
 											className="font-base text-base tracking-wide flex"
