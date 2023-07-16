@@ -78,7 +78,7 @@ const Hero = () => {
 							<button className="hover:scale-105 mx-auto text-center  border-2 border-light-gold hover:border-primary-gold rounded-xl px-5 py-4  pointer bg-primary-blue/50 hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
 								<Link
 									href="/contact-me"
-									className="font-base text-xl tracking-wide "
+									className="font-bold text-xl tracking-wide "
 								>
 									Let's Chat!
 								</Link>

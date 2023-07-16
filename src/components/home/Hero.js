@@ -41,7 +41,7 @@ const Hero = () => {
 										alt="Anthony Kruger"
 										className={`rounded-full shadow-lg hover:shadow-xl shadow-primary-gold hover:shadow-light-gold
 										 border border-primary-gold hover:border-primary-blue self-center
-										  mx-auto transition-all duration-500 hover:relative z-50`}
+										  mx-auto transition-all duration-500 hover:relative`}
 										// className="rounded-full shadow-lg xl:shadow-xl lg:shadow-xl  shadow-primary-blue hover:shadow-md hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 hover:relative"
 										width={400}
 										height={400}
@@ -70,7 +70,7 @@ const Hero = () => {
 							<button className="hover:scale-105 mx-auto text-center  border-2 border-light-gold hover:border-primary-gold rounded-xl px-5 py-4  pointer bg-primary-blue/50 hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300">
 								<Link
 									href="/contact-me"
-									className="font-base text-xl tracking-wide "
+									className="font-bold text-xl tracking-wide "
 								>
 									Let's Chat!
 								</Link>
