@@ -45,6 +45,7 @@ const Hero = () => {
 										// className="rounded-full shadow-lg xl:shadow-xl lg:shadow-xl  shadow-primary-blue hover:shadow-md hover:shadow-primary-gold border border-primary-gold hover:border-primary-blue self-center mx-auto transition-all duration-500 hover:relative"
 										width={400}
 										height={400}
+										priority
 									/>
 								</div>
 							</motion.div>
