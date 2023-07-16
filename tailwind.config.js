@@ -19,6 +19,8 @@ module.exports = {
 			"primary-blue": "#354F6B",
 			"secondary-blue": "#4F6781",
 			"alternative-blue": "#0F2740",
+			"light-blue": "#76899D",
+			
 			"primary-gold": "#a4804b",
 			"secondary-gold": "#87632D",
 			"alternative-gold": "#624111",

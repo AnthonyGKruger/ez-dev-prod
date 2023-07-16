@@ -48,7 +48,7 @@ const WorkExperienceItem = ({
 		>
 			<motion.div className="card max-w-full overflow-hidden" variants={cardVariants}>
 				<div
-					className={`mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] pl-2 my-5 border-l-4 border-primary-blue`}
+					className={`bg-white rounded-xl mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] my-5 border-4 border-primary-blue`}
 				>
 					<div className={`py-2 px-2 grid grid-cols-12  lg:grid-cols-12`}>
 						<FaSuitcase className="col-span-2 lg:col-span-1 text-3xl self-center text-amber-900" />
@@ -81,11 +81,11 @@ const WorkExperienceItem = ({
 						</div>
 					</div>
 					{summary == null ? null : (
-						<div className={`border-t flex border-primary-gold py-6`}>
+						<div className={`border-t flex border-primary-gold py-6 px-3`}>
 							<span>{summary}</span>
 						</div>
 					)}
-					<div className="pt-3 grid grid-cols-1 lg:grid-cols-2">{mappedComments}</div>{" "}
+					<div className="p-3 pb-0 grid grid-cols-1 lg:grid-cols-2">{mappedComments}</div>{" "}
 					{/* <div className="pt-3 flex">{mappedComments}</div>{" "} */}
 				</div>
 			</motion.div>

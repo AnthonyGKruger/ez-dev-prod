@@ -5,5 +5,18 @@
 
 ::selection{
   background-color: #A47F4B;
-  color:#354F6B
+  color:#d8e0e8
 }
+
+
+.primary-1 { background-color: #76899D }
+.primary-2 { background-color: #4F6781 }
+.primary-0 { background-color: #354F6B }
+.primary-3 { background-color: #213C58 }
+.primary-4 { background-color: #0F2740 }
+
+.complement-1 { background-color: #F1D6B0 }
+.complement-2 { background-color: #C6A573 }
+.complement-0 { background-color: #A4804B }
+.complement-3 { background-color: #87632D }
+.complement-4 { background-color: #624111 }
