@@ -19,14 +19,14 @@ export const GET = async (request) => {
 			sourceCode: "https://github.com/AnthonyGKruger/Mumbi-Trust-Administrators",
 		},
 
-		{
-			id: "p4",
-			title: "Fan Catalogue",
-			description: "Fan Catalogue built using NextJs and Tailwind CSS.",
-			link: "https://tlwfans.vercel.app",
-			image: "/media/logos/TLW-logo.jpg",
-			sourceCode: "https://github.com/AnthonyGKruger/TLWfans",
-		},
+		// {
+		// 	id: "p4",
+		// 	title: "Fan Catalogue",
+		// 	description: "Fan Catalogue built using NextJs and Tailwind CSS.",
+		// 	link: "https://tlwfans.vercel.app",
+		// 	image: "/media/logos/TLW-logo.jpg",
+		// 	sourceCode: "https://github.com/AnthonyGKruger/TLWfans",
+		// },
 		{
 			id: "p5",
 			title: "Star Wars E-commerce App",
