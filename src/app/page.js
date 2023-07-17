@@ -3,6 +3,7 @@ import Skills from "./skills/page";
 import Qualifications from "./qualifications/page";
 import WorkExperience from "./work-experience/page";
 import Languages from "./languages/page";
+import Portfolio from "./portfolio/page";
 
 export const metadata = {
   title: 'Home - Anthony Gordon Kruger\'s Portfolio',
@@ -19,6 +20,7 @@ export default () => {
 		<main className="">
 			<Hero />
 			<Skills/>
+			<Portfolio/>
 			<Qualifications/>
 			<WorkExperience/>
 			<Languages/>

@@ -13,8 +13,8 @@ const Hero = () => {
 			// rotate: -10,
 			transition: {
 				type: "spring",
-				bounce: 0,
-				duration: 0.8,
+				bounce: 0.2,
+				duration: 1.5,
 			},
 		},
 	};
@@ -25,13 +25,13 @@ const Hero = () => {
 				<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">
 					<div className="col-span-4 lg:col-span-5 ">
 						<motion.div
-							className="card-container max-w-full overflow-hidden "
+							// className="card-container max-w-full overflow-hidden "
 							initial="offscreen"
 							whileInView="onscreen"
 							viewport={{ once: true, amount: 0.8 }}
 						>
 							<motion.div
-								className="card max-w-full overflow-hidden"
+								// className="card max-w-full overflow-hidden"
 								variants={cardVariants}
 							>
 								<div className="w-full h-full flex py-9 xl:py-9 lg:py-14 px-9 bg-transparent">

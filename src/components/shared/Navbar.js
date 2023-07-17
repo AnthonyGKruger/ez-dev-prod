@@ -1,9 +1,37 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const Navbar = () => {
+	
+	useEffect(() => {
+		window.onscroll = function () {
+			scrollFunction();
+		};
+
+		function scrollFunction() {
+			let elements = document.getElementsByClassName("navLink");
+			if (
+				document.body.scrollTop > 80 ||
+				document.documentElement.scrollTop > 80
+			) {
+				for (let i = 0, len = elements.length; i < len; i++) {
+					elements[i].classList.remove("py-4");
+					elements[i].classList.add("py-1");
+				}
+			} else {
+				for (let i = 0, len = elements.length; i < len; i++) {
+					elements[i].classList.remove("py-1");
+					elements[i].classList.add("py-4");
+				}
+			}
+		}
+	}, []);
+
 	const linkClasses =
-		"col-span-1 py-4 2xl:text-xl font-base text-alternative-blue hover:text-light-gold hover:border-light-gold  hover:bg-primary-blue transition-all duration-300";
+		"navLink col-span-1 py-4 2xl:text-xl font-base text-alternative-blue hover:text-light-gold hover:border-light-gold  hover:bg-primary-blue transition-all duration-300";
+
 	return (
 		<>
 			<Link href="/" className="flex justify-evenly">
