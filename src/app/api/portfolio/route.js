@@ -8,6 +8,7 @@ export const GET = async (request) => {
 			link: "https://ez-staging-ds.vercel.app",
 			image: "/media/logos/ds-logo.png",
 			sourceCode: "",
+			referralLetter:'/media/Digital Stream Referral Letter - Anthony Kruger - web - signed.pdf'
 		},
 		{
 			id: "p1",

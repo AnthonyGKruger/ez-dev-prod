@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { GoBrowser } from "react-icons/go";
 import { BsCodeSlash } from "react-icons/bs";
+import { PiCertificate } from "react-icons/pi";
 import Heading from "@/components/shared/Heading";
 import animationData from "@/lotties/Portfolio.json";
 import Loader from "@/components/shared/Loader";
@@ -84,6 +85,10 @@ const PortfolioContent = () => {
 					window.open(portfolioItem.sourceCode, "_blank");
 				};
 
+				const handleClickForLetterViewing = () => {
+					window.open(portfolioItem.referralLetter, "_blank");
+				};
+
 				return (
 					<motion.div
 						key={idx}
@@ -133,6 +138,21 @@ const PortfolioContent = () => {
 										<span className="inline">View</span>
 									</Link>
 								</button>
+								{portfolioItem.referralLetter ? (
+									<button
+										onClick={handleClickForLetterViewing}
+										className="ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300"
+									>
+										<Link
+											href={portfolioItem.referralLetter}
+											className="font-base text-base tracking-wide flex"
+											target="_blank"
+										>
+											<PiCertificate className="inline self-center mr-2 font-bold" />
+											<span className="inline">Referral Letter</span>
+										</Link>
+									</button>
+								) : null}
 								{portfolioItem.sourceCode ? (
 									<button
 										onClick={handleClickForCodeViewing}
