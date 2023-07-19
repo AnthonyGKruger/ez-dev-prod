@@ -187,7 +187,7 @@ const PortfolioContent = () => {
 				content={"Check Out My Portfolio Below"}
 				subtitle={"Dominating The Web One Project At A Time"}
 			/>
-			<section className="py-14 bg-alternative-blue">
+			<section className="py-14 bg-alternative-blue overflow-hidden">
 				<div className="container px-6 m-auto">
 					{!mappedPortfolioItems && <Loader />}
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">

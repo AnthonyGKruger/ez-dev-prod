@@ -46,15 +46,15 @@ const Navbar = () => {
 					/>
 				</div>
 			</Link>
-			<header className="bg-white text-center py-2">
+			{/* <header className="bg-white text-center py-2">
 				<h1 className="text-primary-blue mt-2 mb-0 text-3xl md:text-4xl 2xl:text-5xl font-thin">
 					Anthony Kruger
 				</h1>
 				<h2 className="text-primary-gold mt-2 mb-0 text-sm 2xl:text-lg uppercase">
 					Full Stack Web Developer
 				</h2>
-			</header>
-			<div className="sticky top-0 z-50">
+			</header> */}
+			<header className="sticky top-0 z-50">
 				<nav className="grid grid-cols-4 lg:grid-cols-8 border-t border-b text-center mt-4 bg-white border-primary-gold 3xl:px-96 xl:px-46">
 					<Link className={`${linkClasses} inline`} href="/">
 						Home
@@ -87,7 +87,7 @@ const Navbar = () => {
 						Contact
 					</Link>
 				</nav>
-			</div>
+			</header>
 		</>
 	);
 };

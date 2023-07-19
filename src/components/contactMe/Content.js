@@ -328,10 +328,10 @@ const ContactMeContent = () => {
 							target="_blank"
 							href="https://www.linkedin.com/in/anthony-gordon-kruger-ezdev/"
 						>
-							<AiFillLinkedin className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
+							<AiFillLinkedin className="hover:text-primary-gold transition-all text-5xl text-primary-blue duration-500" />
 						</Link>
 						<Link target="_blank" href="https://github.com/AnthonyGKruger">
-							<AiFillGithub className="hover:text-primary-gold transition-all duration-300 text-5xl text-primary-blue duration-500" />
+							<AiFillGithub className="hover:text-primary-gold transition-all text-5xl text-primary-blue duration-500" />
 						</Link>
 					</div>
 				</div>
