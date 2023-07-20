@@ -9,9 +9,9 @@ const Hero = () => {
 	const [pageLoaded, setPageLoaded] = useState(false);
 
 	const options = {
-		strings: ["Let's collaborate!", "Let's build something together!"],
-		typeSpeed: 100,
-		backSpeed: 100,
+		strings: ["Let's collaborate!", "Let's build something together!","Have a look at my portfolio!", "Contact me!"],
+		typeSpeed: 200,
+		backSpeed: 200,
 		loop: true,
 		// cursorChar: "|",
 	};

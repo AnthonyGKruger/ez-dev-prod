@@ -35,7 +35,7 @@ const QualificationItem = ({
 			return (
 				<div
 					key={idx}
-					className={`md:text-md px-3 py-2 mb-2 mr-2 inline rounded-xl border-2 border-primary-gold hover:border-primary-blue bg-primary-blue hover:bg-white text-light-gold hover:text-primary-blue duration-300`}
+					className={`cursor-pointer md:text-md px-3 py-2 mb-2 mr-2 inline rounded-xl border-2 border-primary-gold hover:border-primary-blue bg-primary-blue hover:bg-white text-light-gold hover:text-primary-blue duration-300`}
 				>
 					<Link
 						// style={{ textDecoration: "none", color: "#F1D6B0" }}
