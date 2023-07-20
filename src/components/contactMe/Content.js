@@ -96,7 +96,7 @@ const ContactMeContent = () => {
 	const WarningBanner = () => {
 		return (
 			<div
-				className={`sticky top-40 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset ring-red-100 `}
+				className={`sticky top-10 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset ring-red-100 `}
 				role="status"
 			>
 				<div className="mb-2 flex items-center gap-4">
@@ -173,6 +173,7 @@ const ContactMeContent = () => {
 				animationData={contactMeHeadingAnimationData}
 				content={"Fill In The Form Below To Contact Me"}
 				subtitle={"Let's Build Something Together!"}
+				ID="contact-form" 
 			/>
 			{contactFormState.error && <ErrorBanner />}
 			{contactFormState.formHasErrors && <WarningBanner />}
@@ -284,7 +285,7 @@ const ContactMeContent = () => {
 							{!contactFormState.mailSending && (
 								<div className="mt-3">
 									<input
-										className={` mx-auto text-center font-base border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-3  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue transition-all duration-500"`}
+										className={`cursor-pointer mx-auto text-center font-base border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-3  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue transition-all duration-500"`}
 										type="submit"
 										value="Send"
 									/>

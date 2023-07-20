@@ -4,7 +4,7 @@ import Qualifications from "./qualifications/page";
 import WorkExperience from "./work-experience/page";
 import Languages from "./languages/page";
 import Portfolio from "./portfolio/page";
-import ParticleSection from "@/components/home/ParticleSection";
+
 
 export const metadata = {
   title: 'Home - Anthony Gordon Kruger\'s Portfolio',
@@ -19,7 +19,6 @@ export const metadata = {
 export default () => {
 	return (
 		<main className="">
-			{/* <ParticleSection/> */}
 			<Hero />
 			<Skills/>
 			<Portfolio/>

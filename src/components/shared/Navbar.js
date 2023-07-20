@@ -2,9 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-	
+	const pathname = usePathname();
+
 	useEffect(() => {
 		window.onscroll = function () {
 			scrollFunction();
@@ -34,18 +36,20 @@ const Navbar = () => {
 
 	return (
 		<>
-			<Link href="/" className="flex justify-evenly">
-				<div className="w-48 h-auto">
-					<Image
-						src="/media/logos/ezdev-logo.png"
-						alt="ez-dev logo"
-						// layout="responsive"
-						width={200}
-						height={200}
-						className="object-contain w-auto h-auto"
-					/>
-				</div>
-			</Link>
+			{pathname == "/" ? null : (
+				<Link href="/" className="flex justify-evenly">
+					<div className="w-48 h-auto">
+						<Image
+							src="/media/logos/ezdev-logo.png"
+							alt="ez-dev logo"
+							// layout="responsive"
+							width={200}
+							height={200}
+							className="object-contain w-auto h-auto"
+						/>
+					</div>
+				</Link>
+			)}
 			{/* <header className="bg-white text-center py-2">
 				<h1 className="text-primary-blue mt-2 mb-0 text-3xl md:text-4xl 2xl:text-5xl font-thin">
 					Anthony Kruger
@@ -55,7 +59,11 @@ const Navbar = () => {
 				</h2>
 			</header> */}
 			<header className="sticky top-0 z-50">
-				<nav className="grid grid-cols-4 lg:grid-cols-8 border-t border-b text-center mt-4 bg-white border-primary-gold 3xl:px-96 xl:px-46">
+				<nav
+					className={`grid grid-cols-4 lg:grid-cols-8 border-t border-b text-center ${
+						pathname == "/" ? "" : "mt-4"
+					} bg-white border-primary-gold 3xl:px-96 xl:px-46`}
+				>
 					<Link className={`${linkClasses} inline`} href="/">
 						Home
 					</Link>
