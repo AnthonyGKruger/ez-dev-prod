@@ -29,16 +29,16 @@ const imageSize = 50;
           // style={{objectFit: 'contain'}}
 					// fill
 					unoptimized
-					className="grayscale hover:grayscale-0 opacity-50 hover:opacity-100 object-contain hover:scale-125 transition-all duration-300 w-auto"
+					className={`grayscale dark:grayscale-0 ${company.name =="Addventures" ? "dark:invert" : ""} hover:grayscale-0 opacity-50 hover:opacity-100 object-contain hover:scale-125 transition-all duration-300 w-auto`}
 				/>
 			</div>
 		);
 	});
 
 	return (
-		<section className="bg-white py-9 lg:py-28">
+		<section className="bg-white dark:bg-transparent  border-t border-primary-gold py-9 lg:py-28">
 			<div className="text-center mb-14">
-				<h2 className="text-primary-blue font-extrabold text-3xl my-3 px-9">
+				<h2 className="text-primary-blue dark:text-white font-extrabold text-3xl my-3 px-9">
 					Some Of The Awesome Companies That I Have Worked With
 				</h2>
 			</div>

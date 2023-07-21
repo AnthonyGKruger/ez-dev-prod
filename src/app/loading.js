@@ -38,7 +38,7 @@
 
 export default () => {
   return (
-    <section className="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <section className="fixed inset-0 flex items-center justify-center bg-white dark:bg-black z-50">
       <div className="w-10 h-10 animate-spin">
         <svg
           viewBox="0 0 24 24"

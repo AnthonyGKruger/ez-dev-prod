@@ -13,8 +13,8 @@ const LanguagesContent = () => {
 				subtitle={"Keeping Up With The Lingo"}
 				content="Below Are The Languages I Am Fluent In"
 			/>
-			<article className=" py-14 bg-alternative-blue">
-				<div className="flex w-[50%] mx-auto bg-alternative-blue">
+			<article className=" py-14 bg-alternative-blue dark:bg-transparent">
+				<div className="flex w-[50%] mx-auto bg-alternative-blue dark:bg-transparent">
 					<div className="inline w-full lg:w-[50%] text-center">
 						<div className={`f4 text-light-gold text-xl`}>
 							<Lottie

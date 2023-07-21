@@ -12,7 +12,7 @@ const EzdevSvg = () => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			className="stroke-[1.5rem] stroke-white mx-auto transition duration-[4000ms]"
+			className="stroke-[1.5rem] stroke-white mx-auto transition duration-[4000ms] "
 			viewBox="0 0 917 432"
 			width="458.5000000pt"
 			height="216.000000pt"
@@ -20,7 +20,7 @@ const EzdevSvg = () => {
 		>
 			<g
 				transform="translate(0.000000,432.000000) scale(0.100000,-0.100000)"
-				fill={`${layoutLoaded?"#ffffff":"currentColor"}`}
+				fill={`${layoutLoaded?"#ffffff":"#000000"}`}
 				stroke="white"
 			>
 				<path

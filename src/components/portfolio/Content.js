@@ -101,7 +101,16 @@ const PortfolioContent = () => {
 						onClick={handleClickForSiteViewing}
 					>
 						<motion.div
-							className="h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl shadow-light-blue hover:shadow-primary-gold border border-primary-gold duration-300 flex flex-col justify-center"
+							className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900
+							 rounded-lg hover:rounded-3xl hover:text-secondary-gold dark:hover:text-light-gold shadow-lg 
+							 dark:shadow hover:shadow dark:hover:shadow-lg	shadow-alternative-blue 
+							  hover:shadow-secondary-gold dark:hover:shadow-secondary-gold border border-primary-gold
+								 duration-300 flex flex-col justify-center`}
+							// 	 className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900
+							//  rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl dark:hover:shadow
+							//   shadow-light-blue dark:shadow-white dark:hover:shadow-primary-gold
+							// 	 hover:shadow-primary-gold border border-primary-gold
+							// 	 duration-300 flex flex-col justify-center`}
 							variants={cardVariants}
 						>
 							<div className="flex justify-center items-center h-full">
@@ -127,7 +136,11 @@ const PortfolioContent = () => {
 							<div className="pt-9">
 								<button
 									onClick={handleClickForSiteViewing}
-									className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300"
+									className={`hover:scale-105 mx-auto text-center  border-2 border-alternative-gold
+									dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
+									px-3 py-2  pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold
+									 hover:bg-white text-[#f1d6b0] dark:text-white dark:hover:text-black
+									  hover:text-primary-blue duration-300`}
 								>
 									<Link
 										href={portfolioItem.link}
@@ -141,7 +154,11 @@ const PortfolioContent = () => {
 								{portfolioItem.referralLetter ? (
 									<button
 										onClick={handleClickForLetterViewing}
-										className="ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300"
+										className={`ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold
+										dark:border-light-gold  hover:border-primary-blue dark:hover:border-light-gold rounded-xl
+										 px-3 py-2  pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold
+										  hover:bg-white text-[#f1d6b0] dark:text-white dark:hover:text-black
+											 hover:text-primary-blue duration-300`}
 									>
 										<Link
 											href={portfolioItem.referralLetter}
@@ -156,7 +173,11 @@ const PortfolioContent = () => {
 								{portfolioItem.sourceCode ? (
 									<button
 										onClick={handleClickForCodeViewing}
-										className="ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-3 py-2  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue duration-300"
+										className={`ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold
+										dark:border-light-gold  hover:border-primary-blue dark:hover:border-light-gold rounded-xl
+										 px-3 py-2  pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold
+										  hover:bg-white text-[#f1d6b0] dark:text-white dark:hover:text-black
+											 hover:text-primary-blue duration-300`}
 									>
 										<Link
 											href={portfolioItem.sourceCode}
@@ -187,7 +208,7 @@ const PortfolioContent = () => {
 				content={"Check Out My Portfolio Below"}
 				subtitle={"Dominating The Web One Project At A Time"}
 			/>
-			<section className="py-14 bg-alternative-blue overflow-hidden">
+			<section className="py-14 bg-alternative-blue dark:bg-black overflow-hidden">
 				<div className="container px-6 m-auto">
 					{!mappedPortfolioItems && <Loader />}
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">

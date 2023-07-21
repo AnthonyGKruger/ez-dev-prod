@@ -90,13 +90,16 @@ const ContactMeContent = () => {
 	};
 
 	const inputContainerClasses =
-		"flex items-center p-2 border border-primary-blue focus:border-primary-gold rounded-md";
+		`flex items-center p-2 border border-primary-blue dark:border-primary-gold focus:border-primary-gold 
+		dark:focus:border-light-gold rounded-md`;
 	const inputClasses = "w-full p-1 ml-3  outline-none bg-transparent";
 
 	const WarningBanner = () => {
 		return (
 			<div
-				className={`sticky top-10 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset ring-red-100 `}
+				className={`sticky top-10 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden 
+				rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset
+				 ring-red-100 `}
 				role="status"
 			>
 				<div className="mb-2 flex items-center gap-4">
@@ -133,7 +136,9 @@ const ContactMeContent = () => {
 	const ErrorBanner = () => {
 		return (
 			<div
-				className={`sticky top-40 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset ring-red-100 `}
+				className={`sticky top-40 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden
+				 rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset
+				  ring-red-100 `}
 				role="status"
 			>
 				<div className="mb-2 flex items-center gap-4">
@@ -285,7 +290,10 @@ const ContactMeContent = () => {
 							{!contactFormState.mailSending && (
 								<div className="mt-3">
 									<input
-										className={`cursor-pointer mx-auto text-center font-base border-2 border-alternative-gold hover:border-primary-blue rounded-xl px-5 py-3  pointer bg-primary-blue hover:bg-white text-[#f1d6b0] hover:text-primary-blue transition-all duration-500"`}
+										className={`cursor-pointer mx-auto text-center font-base border-2 border-alternative-gold
+										 dark:border-light-gold hover:border-primary-blue rounded-xl px-5 py-3 bg-primary-blue
+										 dark:bg-transparent hover:bg-white dark:hover:bg-light-gold text-[#f1d6b0] dark:text-white
+										  hover:text-primary-blue dark:hover:text-black transition-all duration-500`}
 										type="submit"
 										value="Send"
 									/>
@@ -313,7 +321,7 @@ const ContactMeContent = () => {
 									/>
 									<path
 										d="M12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 9.34784 20.9464 6.8043 19.0711 4.92893C17.1957 3.05357 14.6522 2 12 2"
-										className="stroke-primary-blue"
+										className="stroke-primary-blue dark:stroke-primary-gold"
 										strokeWidth="4"
 									/>
 								</svg>
@@ -329,10 +337,10 @@ const ContactMeContent = () => {
 							target="_blank"
 							href="https://www.linkedin.com/in/anthony-gordon-kruger-ezdev/"
 						>
-							<AiFillLinkedin className="hover:text-primary-gold transition-all text-5xl text-primary-blue duration-500" />
+							<AiFillLinkedin className="hover:text-primary-gold transition-all text-5xl text-primary-blue duration-500 dark:text-white dark:hover:text-primary-gold" />
 						</Link>
 						<Link target="_blank" href="https://github.com/AnthonyGKruger">
-							<AiFillGithub className="hover:text-primary-gold transition-all text-5xl text-primary-blue duration-500" />
+							<AiFillGithub className="hover:text-primary-gold transition-all text-5xl text-primary-blue duration-500 dark:text-white dark:hover:text-primary-gold" />
 						</Link>
 					</div>
 				</div>

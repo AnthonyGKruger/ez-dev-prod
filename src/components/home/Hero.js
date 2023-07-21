@@ -10,8 +10,8 @@ const Hero = () => {
 
 	const options = {
 		strings: ["Let's collaborate!", "Let's build something together!","Have a look at my portfolio!", "Contact me!"],
-		typeSpeed: 200,
-		backSpeed: 200,
+		typeSpeed: 50,
+		backSpeed: 50,
 		loop: true,
 		// cursorChar: "|",
 	};
@@ -42,7 +42,7 @@ const Hero = () => {
 	};
 
 	return (
-		<section className="lg:pb-20 pt-10 pb-9 bg-alternative-blue">
+		<section className="lg:pb-20 pt-10 pb-9 bg-alternative-blue dark:bg-black">
 			{pageLoaded && <AnimatedContent />}
 			<div className="container md:mt-8 px-6 m-auto">
 				<div className="grid grid-cols-4 gap-6 ">
@@ -69,7 +69,12 @@ const Hero = () => {
 								<div className="pt-9">
 									<button
 										onClick={handleClick}
-										className="w-full md:w-auto hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-gold rounded-full px-5 py-4  pointer bg-light-gold hover:bg-white text-alternative-blue hover:text-alternative-gold duration-300"
+										className={`w-full md:w-auto hover:scale-105 mx-auto text-center  border-2
+										 border-alternative-gold dark:border-light-gold hover:border-primary-gold rounded-full px-5 py-4  pointer
+										  bg-light-gold dark:bg-black hover:bg-white dark:hover:bg-light-gold
+											 text-alternative-blue hover:text-alternative-gold dark:text-white
+											  dark:hover:text-black
+											duration-300`}
 									>
 										<Link
 											href="#contact-form"

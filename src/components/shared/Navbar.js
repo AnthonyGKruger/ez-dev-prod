@@ -1,15 +1,25 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
+	const [logo, setLogo] = useState("/media/logos/ezdev-logo.png");
+
 	const pathname = usePathname();
+	const { theme } = useTheme();
+
+	useLayoutEffect(() => {
+		theme == "dark"
+			? setLogo("/media/logos/ezdev-logo-white.png")
+			: setLogo("/media/logos/ezdev-logo.png");
+	}, [theme]);
 
 	useEffect(() => {
 		window.onscroll = function () {
-			scrollFunction();
+			scrollFunction(); 
 		};
 
 		function scrollFunction() {
@@ -32,15 +42,17 @@ const Navbar = () => {
 	}, []);
 
 	const linkClasses =
-		"navLink col-span-1 py-4 2xl:text-xl font-base text-alternative-blue hover:text-light-gold hover:border-light-gold  hover:bg-primary-blue transition-all duration-300";
+		`navLink col-span-1 py-4 2xl:text-xl font-base dark:text-white text-alternative-blue hover:text-light-gold 
+		dark:hover:text-black hover:border-light-gold  hover:bg-primary-blue dark:hover:bg-light-gold transition-all 
+		duration-300`;
 
 	return (
 		<>
 			{pathname == "/" ? null : (
 				<Link href="/" className="flex justify-evenly">
-					<div className="w-48 h-auto">
+					<div className="w-48 h-auto dark:bg-black">
 						<Image
-							src="/media/logos/ezdev-logo.png"
+							src={logo}
 							alt="ez-dev logo"
 							// layout="responsive"
 							width={200}
@@ -62,7 +74,7 @@ const Navbar = () => {
 				<nav
 					className={`grid grid-cols-4 lg:grid-cols-8 border-t border-b text-center ${
 						pathname == "/" ? "" : "mt-4"
-					} bg-white border-primary-gold 3xl:px-96 xl:px-46`}
+					} bg-white dark:bg-black border-primary-gold 3xl:px-96 xl:px-46`}
 				>
 					<Link className={`${linkClasses} inline`} href="/">
 						Home

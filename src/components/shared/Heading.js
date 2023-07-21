@@ -26,11 +26,11 @@ const Heading = ({ animationData, content, subtitle,ID }) => {
 					</div>
 
 					<div className=" h-full md:inline ">
-						<h3 className="md:mt-14 lg:text-md md:text-sm xl:text-md text-md font-base md:text-left text-center text-alternative-gold">
+						<h3 className="md:mt-14 lg:text-md md:text-sm xl:text-md text-md font-base md:text-left text-center text-alternative-gold dark:text-light-gold">
 					
 								{subtitle}
 						</h3>
-						<h3 className=" lg:text-3xl md:text-3xl xl:text-4xl text-2xl font-bold md:text-left text-center">
+						<h3 className="dark:text-white lg:text-3xl md:text-3xl xl:text-4xl text-2xl font-bold md:text-left text-center">
 							{content}
 						</h3>
 					</div>

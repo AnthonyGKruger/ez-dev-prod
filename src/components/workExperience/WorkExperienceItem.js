@@ -31,7 +31,7 @@ const WorkExperienceItem = ({
 		return (
 			<div
 				key={idx}
-				className={`col-span-1  md:text-md px-3 py-2 mb-2 mr-2 inline rounded-xl border-2 border-primary-gold bg-primary-blue  text-light-gold duration-300`}
+				className={`col-span-1  md:text-md px-3 py-2 mb-2 mr-2 inline rounded-xl border-2 dark:border border-primary-gold dark:border-light-gold bg-primary-blue dark:bg-transparent text-light-gold duration-300`}
 			>
 				<FaTrophy className="inline" />
 				<span className="ml-3 inline">{comment}</span>
@@ -48,7 +48,7 @@ const WorkExperienceItem = ({
 		>
 			<motion.div className="card max-w-full overflow-hidden" variants={cardVariants}>
 				<div
-					className={`bg-white rounded-xl mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] my-5 border-4 border-primary-blue`}
+					className={`bg-white dark:bg-transparent  rounded-xl mx-auto 2xl:w-[60%] xl:w-[60%] lg:w-[80%] w-[90%] my-5 border-4 border-primary-blue dark:border-primary-gold`}
 				>
 					<div className={`py-2 px-2 grid grid-cols-12  lg:grid-cols-12`}>
 						<FaSuitcase className="col-span-2 lg:col-span-1 text-3xl self-center text-amber-900" />

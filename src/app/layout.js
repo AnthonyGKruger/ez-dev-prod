@@ -9,6 +9,8 @@ import Script from "next/script";
 import Footer from "@/components/shared/Footer";
 import CookieBanner from "@/components/shared/CookieBanner";
 import Companies from "@/components/shared/Companies";
+import ThemeToggle from "@/components/shared/ThemeToggle";
+import { ThemeProvider } from "next-themes";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
@@ -34,15 +36,18 @@ export default ({ children }) => {
 			{/* <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script> */}
 
 			<body
-				className={`${roboto.className} bg-white text-alternative-blue relative`}
+				className={`${roboto.className} bg-white dark:bg-black dark:text-zinc-200 text-alternative-blue relative`}
 			>
 				<Provider store={store}>
-					<Navbar />
-					{children}
-					<Companies />
-					<Footer />
-					<CookieBanner />
-					<Analytics />
+					<ThemeProvider attribute="class">
+						<Navbar />
+						{children}
+						<Companies />
+						<Footer />
+						<CookieBanner />
+						<ThemeToggle />
+						<Analytics />
+					</ThemeProvider>
 				</Provider>
 			</body>
 		</html>

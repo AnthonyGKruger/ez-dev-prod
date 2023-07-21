@@ -56,7 +56,7 @@ const QualificationsContent = () => {
 				content={"Have A Look At My Qualifications 👇"}
 			/>
 				{!mappedQualifications && <Loader/>}
-			<section className="py-9 overflow-hidden max-w-full bg-light-blue">{mappedQualifications}</section>
+			<section className="py-9 overflow-hidden max-w-full bg-light-blue dark:bg-transparent">{mappedQualifications}</section>
 		</>
 	);
 };

@@ -20,7 +20,7 @@ const Hero = () => {
 	};
 
 	return (
-		<section className="lg:py-20 pb-9 bg-alternative-blue">
+		<section className="lg:py-20 pb-9 bg-alternative-blue dark:bg-transparent">
 			<div className="container px-6 m-auto">
 				<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">
 					<div className="col-span-4 lg:col-span-5 ">
@@ -75,7 +75,12 @@ const Hero = () => {
 							and look forward to connecting with like-minded professionals.
 						</p>
 						<div className="pt-9">
-						<button className="hover:scale-105 mx-auto text-center  border-2 border-alternative-gold hover:border-primary-gold rounded-full px-5 py-4  pointer bg-light-gold hover:bg-white text-alternative-blue hover:text-alternative-gold duration-300">
+						<button className={`w-full md:w-auto hover:scale-105 mx-auto text-center  border-2
+										 border-alternative-gold dark:border-light-gold hover:border-primary-gold rounded-full px-5 py-4  pointer
+										  bg-light-gold dark:bg-black hover:bg-white dark:hover:bg-light-gold
+											 text-alternative-blue hover:text-alternative-gold dark:text-white
+											  dark:hover:text-black
+											duration-300`}>
 								<Link
 									href="/contact-me"
 									className="font-bold text-xl tracking-wide "
