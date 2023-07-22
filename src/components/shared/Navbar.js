@@ -9,10 +9,10 @@ const Navbar = () => {
 	const [logo, setLogo] = useState("/media/logos/ezdev-logo.png");
 
 	const pathname = usePathname();
-	const { theme } = useTheme();
+	const { theme } = useTheme(); 
 
 	useLayoutEffect(() => {
-		theme == "dark"
+		 theme == "dark"
 			? setLogo("/media/logos/ezdev-logo-white.png")
 			: setLogo("/media/logos/ezdev-logo.png");
 	}, [theme]);
