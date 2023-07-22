@@ -6,12 +6,12 @@ const BackToTop = () => {
 		<ScrollToTop showUnder={160}>
 			<div
 				className={`rounded-full border-2 mr-4 bottom-16 fixed right-0 z-40 h-10 w-10 text-xl bg-white dark:bg-black 
-        flex items-center justify-center dark:border-light-gold border-alternative-blue hover:bg-light-blue
+        flex items-center justify-center dark:border-light-gold border-alternative-blue dark:hover:bg-light-gold hover:bg-light-blue
         dark:hover:text-black  transition-all duration-300`}
 			>
 				<BiSolidUpArrow
-					className={`dark:text-light-gold  text-alternative-blue
-           hover:text-alternative-gold dark:hover:text-primary-gold`}
+					className={`dark:text-white  text-alternative-blue
+           hover:text-alternative-gold dark:hover:text-black`}
 				/>
 			</div>
 		</ScrollToTop>
