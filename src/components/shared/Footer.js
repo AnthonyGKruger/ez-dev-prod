@@ -47,7 +47,7 @@ export default () => {
 	]; 
 
 	return (
-		<footer className="pt-10 mx-auto  border-t border-alternative-gold">
+		<footer className="pt-10 mx-auto  border-t border-primary-gold">
 			<div className="mx-auto ">
 			{/* <div className="max-w-screen-xl mx-auto px-4  md:px-8"> */}
 				<div className="justify-center sm:flex">
@@ -70,7 +70,7 @@ export default () => {
 						</ul>
 					</div>
 				</div>
-				<div className="mt-10 py-5 border-t border-alternative-gold text-center bg-alternative-blue dark:bg-transparent text-white">
+				<div className="mt-10 py-5 border-t border-primary-gold text-center bg-alternative-blue dark:bg-transparent text-white">
 					<p>
 						© {new Date().getFullYear() + " "}
 						<Link href="/" className="hover:text-light-gold dark:hover:text-primary-gold duration-150">

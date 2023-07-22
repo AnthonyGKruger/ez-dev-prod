@@ -11,6 +11,7 @@ import CookieBanner from "@/components/shared/CookieBanner";
 import Companies from "@/components/shared/Companies";
 import ThemeToggle from "@/components/shared/ThemeToggle";
 import { ThemeProvider } from "next-themes";
+import BackToTop from "@/components/shared/BackToTop";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
@@ -45,6 +46,7 @@ export default ({ children }) => {
 						<Companies />
 						<Footer />
 						<CookieBanner />
+						<BackToTop/>
 						<ThemeToggle />
 						<Analytics />
 					</ThemeProvider>

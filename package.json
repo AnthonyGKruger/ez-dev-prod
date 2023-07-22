@@ -25,6 +25,7 @@
     "react-icons": "^4.10.1",
     "react-lottie-player": "^1.5.4",
     "react-redux": "^8.1.1",
+    "react-scroll-up": "^1.4.0",
     "react-use-downloader": "^1.2.4",
     "tailwindcss": "3.3.2",
     "typed.js": "^2.0.16"
