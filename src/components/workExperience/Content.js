@@ -39,7 +39,7 @@ const WorkExperienceContent = () => {
 			<Heading
 				animationData={animationData}
 				subtitle={"Hard Work & Perseverance"}
-				content={"Check Out My Work Experience Below 💪"}
+				content={"Check Out My Work Experience Below"}
 			/>
 
 			{!mappedExperience && <Loader />}

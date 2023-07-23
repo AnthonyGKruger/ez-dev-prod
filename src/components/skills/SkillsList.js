@@ -13,12 +13,21 @@ import { FcLinux } from "react-icons/fc";
 import { motion } from "framer-motion";
 import Heading from "@/components/shared/Heading";
 import animationData from "@/lotties/Skill.json";
+import darkAnimationData from "@/lotties/darkSkill.json";
+import { useTheme } from "next-themes";
 
 const SkillsList = () => {
+	const { theme } = useTheme();
+
 	const iconStyles = "mx-auto text-6xl";
 
 	const skills = [
-		{ title: "NextJS", icon: <TbBrandNextjs className={`${iconStyles} text-black dark:text-white`} /> },
+		{
+			title: "NextJS",
+			icon: (
+				<TbBrandNextjs className={`${iconStyles} text-black dark:text-white`} />
+			),
+		},
 		{
 			title: "ReactJS",
 			icon: <FaReact className={`${iconStyles} text-blue-600`} />,
@@ -131,10 +140,12 @@ const SkillsList = () => {
 				transition={{ type: "spring", stiffness: 400, damping: 50 }}
 			>
 				<motion.div className="max-w-full" variants={cardVariants}>
-					<div className={`max-w-full overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
+					<div
+						className={`max-w-full overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
 					hover:rounded-3xl hover:text-secondary-gold shadow-lg dark:shadow hover:shadow- dark:hover:shadow-lg
 					 shadow-alternative-blue  hover:shadow-secondary-gold
-					  dark:hover:shadow-secondary-gold border border-primary-gold duration-300`}>
+					  dark:hover:shadow-secondary-gold border border-primary-gold duration-300`}
+					>
 						<figure className="p-9 pb-0 text-center">{skill.icon}</figure>
 
 						<div className="p-6">
@@ -149,7 +160,7 @@ const SkillsList = () => {
 	return (
 		<>
 			<Heading
-				animationData={animationData}
+				animationData={theme == "dark" ? darkAnimationData : animationData}
 				content={"Some Of The Skills & Awesome Technologies I Use!"}
 			/>
 			<section className="py-14 md:py-28 bg-primary-blue dark:bg-black overflow-hidden">

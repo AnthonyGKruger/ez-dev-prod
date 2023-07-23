@@ -3,6 +3,8 @@
 import { useLayoutEffect , useState} from "react";
 
 const EzdevSvg = () => {
+
+
 	const [layoutLoaded, setLayoutLoaded] = useState(false);
 	useLayoutEffect(() => {
 		
@@ -20,7 +22,7 @@ const EzdevSvg = () => {
 		>
 			<g
 				transform="translate(0.000000,432.000000) scale(0.100000,-0.100000)"
-				fill={`${layoutLoaded?"#ffffff":"#000000"}`}
+				fill={`${layoutLoaded?"#ffffff":" #00000000"}`}
 				stroke="white"
 			>
 				<path

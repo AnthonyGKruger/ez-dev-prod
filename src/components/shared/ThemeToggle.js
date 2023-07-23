@@ -7,14 +7,12 @@ import animationData from "@/lotties/Cookies.json";
 import { useTheme } from "next-themes";
 
 const ThemeToggle = () => {
-	
-
 	const { systemTheme, theme, setTheme } = useTheme();
 
 	const currentTheme = theme === "system" ? systemTheme : theme;
-	
+
 	// setTheme('dark')
-  
+
 	return (
 		<article
 			className={`bg-white rounded-full w-max mr-4 bottom-3 fixed right-0 z-40`}
@@ -44,12 +42,14 @@ const ThemeToggle = () => {
 							  checked:after:focus:ring-alternative-blue 
                focus-visible:outline-none disabled:cursor-not-allowed disabled:border-slate-200
                 disabled:after:ring-slate-300`}
-					
 					type="checkbox"
 					value=""
-          // defaultChecked
-					checked={theme=="light" ? true:false}
+					// defaultChecked
+					checked={theme == "light" ? true : false}
 					id="theme-toggle"
+					onChange={() => {
+						return;
+					}}
 				/>
 			</div>
 		</article>

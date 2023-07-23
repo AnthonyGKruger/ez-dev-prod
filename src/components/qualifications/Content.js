@@ -53,7 +53,7 @@ const QualificationsContent = () => {
 			<Heading
 				animationData={animationData}
 				subtitle={"Always Leveling Up"}
-				content={"Have A Look At My Qualifications 👇"}
+				content={"Have A Look At My Qualifications"}
 			/>
 				{!mappedQualifications && <Loader/>}
 			<section className="py-9 overflow-hidden max-w-full bg-light-blue dark:bg-transparent">{mappedQualifications}</section>

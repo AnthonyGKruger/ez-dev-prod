@@ -7,11 +7,11 @@ const BackToTop = () => {
 			<div
 				className={`rounded-full border-2 mr-4 bottom-16 fixed right-0 z-40 h-10 w-10 text-xl bg-white dark:bg-black 
         flex items-center justify-center dark:border-light-gold border-alternative-blue dark:hover:bg-light-gold hover:bg-light-blue
-        dark:hover:text-black  transition-all duration-300`}
+        dark:hover:text-black  transition-all duration-300 hover:scale-105`}
 			>
 				<BiSolidUpArrow
 					className={`dark:text-white  text-alternative-blue
-           hover:text-alternative-gold dark:hover:text-black`}
+           hover:text-alternative-gold dark:hover:text-black hover:scale-105 hover:animate-bounce`}
 				/>
 			</div>
 		</ScrollToTop>

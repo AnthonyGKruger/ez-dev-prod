@@ -10,6 +10,8 @@ import animationData from "@/lotties/ContactMe.json";
 import Heading from "@/components/shared/Heading";
 import contactMeHeadingAnimationData from "@/lotties/contact-me-heading.json";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { BsPhoneFill} from "react-icons/bs"
+import {HiMail} from "react-icons/hi"
 import Link from "next/link";
 
 const ContactMeContent = () => {
@@ -91,14 +93,15 @@ const ContactMeContent = () => {
 
 	const inputContainerClasses =
 		`flex items-center p-2 border border-primary-blue dark:border-primary-gold focus:border-primary-gold 
-		dark:focus:border-light-gold rounded-md`;
+		dark:focus:border-lighter-gold rounded-md`;
 	const inputClasses = "w-full p-1 ml-3  outline-none bg-transparent";
 
 	const WarningBanner = () => {
 		return (
 			<div
 				className={`sticky top-10 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden 
-				rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset
+				rounded bg-red-50 dark:bg-black px-4 py-3 text-sm text-red-500 shadow-lg dark:shadow-none
+				 shadow-red-100 ring-1 ring-inset dark:ring-red-500
 				 ring-red-100 `}
 				role="status"
 			>
@@ -136,9 +139,10 @@ const ContactMeContent = () => {
 	const ErrorBanner = () => {
 		return (
 			<div
-				className={`sticky top-40 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden
-				 rounded bg-red-50 px-4 py-3 text-sm text-red-500 shadow-lg shadow-red-100 ring-1 ring-inset
-				  ring-red-100 `}
+			className={`sticky top-10 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden 
+				rounded bg-red-50 dark:bg-black px-4 py-3 text-sm text-red-500 shadow-lg dark:shadow-none
+				 shadow-red-100 ring-1 ring-inset dark:ring-red-500
+				 ring-red-100 `}
 				role="status"
 			>
 				<div className="mb-2 flex items-center gap-4">
@@ -328,9 +332,9 @@ const ContactMeContent = () => {
 							)}
 						</form>
 					</article>
-					<ResumeRequest />
-					<h2 className={`text-xl `}>
-						You can also reach me through the below platforms:
+					
+					<h2 className={`text-xl mt-5`}>
+						You can also reach me through these platforms:
 					</h2>
 					<div className="mt-5 flex flex-wrap items-center gap-4 text-sm 2xl:text-xl sm:text-base  ">
 						<Link
@@ -342,7 +346,13 @@ const ContactMeContent = () => {
 						<Link target="_blank" href="https://github.com/AnthonyGKruger">
 							<AiFillGithub className="hover:text-primary-gold transition-all text-5xl text-primary-blue duration-500 dark:text-white dark:hover:text-primary-gold" />
 						</Link>
-					</div>
+						<Link target="_blank" href="tel:+27610340820">
+								<BsPhoneFill className="hover:text-primary-gold transition-all text-4xl text-primary-blue duration-500 dark:text-white dark:hover:text-primary-gold" />
+						</Link>
+						<Link target="_blank" href="mailto:anthony@ezdev.solutions">
+								<HiMail className="hover:text-primary-gold transition-all text-6xl text-primary-blue duration-500 dark:text-white dark:hover:text-primary-gold" />
+						</Link>
+					</div><ResumeRequest />
 				</div>
 			</div>
 		</>
