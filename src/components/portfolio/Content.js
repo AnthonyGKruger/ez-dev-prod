@@ -1,6 +1,7 @@
+// Import statements
 "use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { GoBrowser } from "react-icons/go";
@@ -12,12 +13,15 @@ import Loader from "@/components/shared/Loader";
 import ContactMeContent from "../contactMe/Content";
 
 const PortfolioContent = () => {
+	// State to hold the mapped portfolio items
 	const [mappedPortfolioItems, setMappedPortfolioItems] = useState(null);
 
+	// Fetch portfolio data from the server
 	const fetchPortfolioData = async () => {
 		const response = await fetch("/api/portfolio");
 		const data = await response.json();
 
+		// Framer Motion variants for card animations
 		const cardVariants = {
 			offscreen: {
 				y: 800,
@@ -32,59 +36,23 @@ const PortfolioContent = () => {
 			},
 		};
 
+		// Map and create portfolio items
 		setMappedPortfolioItems(
 			data.map((portfolioItem, idx) => {
-				let amount;
+				// Calculate animation amount based on the index
+				let amount = idx < 11 ? idx * 0.1 : 1;
 
-				switch (idx) {
-					case 0:
-						amount = 0;
-						break;
-					case 1:
-						amount = 0.1;
-						break;
-					case 2:
-						amount = 0.2;
-						break;
-					case 3:
-						amount = 0.3;
-						break;
-					case 4:
-						amount = 0.4;
-						break;
-					case 5:
-						amount = 0.5;
-						break;
-					case 6:
-						amount = 0.6;
-						break;
-					case 7:
-						amount = 0.7;
-						break;
-					case 8:
-						amount = 0.8;
-						break;
-					case 9:
-						amount = 0.9;
-						break;
-					case 10:
-						amount = 1;
-						break;
-					case 11:
-						amount = 1;
-						break;
-					default:
-						amount = 0;
-				}
-
+				// Handle click event for site viewing
 				const handleClickForSiteViewing = () => {
 					window.open(portfolioItem.link, "_blank");
 				};
 
+				// Handle click event for code viewing
 				const handleClickForCodeViewing = () => {
 					window.open(portfolioItem.sourceCode, "_blank");
 				};
 
+				// Handle click event for referral letter viewing
 				const handleClickForLetterViewing = () => {
 					window.open(portfolioItem.referralLetter, "_blank");
 				};
@@ -101,28 +69,22 @@ const PortfolioContent = () => {
 						onClick={handleClickForSiteViewing}
 					>
 						<motion.div
-							className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900
-							 rounded-lg hover:rounded-3xl hover:text-secondary-gold dark:hover:text-light-gold shadow-lg 
-							 dark:shadow hover:shadow dark:hover:shadow-lg	shadow-alternative-blue 
-							  hover:shadow-secondary-gold dark:hover:shadow-secondary-gold border border-primary-gold
-								 duration-300 flex flex-col justify-center`}
-							// 	 className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900
-							//  rounded-lg hover:rounded-3xl hover:text-secondary-gold shadow-md hover:shadow-xl dark:hover:shadow
-							//   shadow-light-blue dark:shadow-white dark:hover:shadow-primary-gold
-							// 	 hover:shadow-primary-gold border border-primary-gold
-							// 	 duration-300 flex flex-col justify-center`}
+							className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
+                hover:rounded-3xl hover:text-secondary-gold dark:hover:text-light-gold shadow-lg dark:shadow 
+                hover:shadow dark:hover:shadow-lg shadow-alternative-blue hover:shadow-secondary-gold 
+                dark:hover:shadow-secondary-gold border border-primary-gold duration-300 flex flex-col justify-center`}
 							variants={cardVariants}
 						>
 							<div className="flex justify-center items-center h-full">
 								<div className="relative w-full h-40 md:h-40">
 									<div className="absolute inset-0">
+										{/* Display portfolio item image using Next.js Image component */}
 										<Image
 											src={portfolioItem.image}
 											alt={portfolioItem.title}
 											className="object-contain w-full h-full"
 											width={300}
 											height={300}
-											// layout="fill"
 										/>
 									</div>
 								</div>
@@ -134,17 +96,17 @@ const PortfolioContent = () => {
 								</dd>
 							</dl>
 							<div className="pt-9">
+								{/* Buttons for site viewing, referral letter, and code viewing */}
 								<button
 									onClick={handleClickForSiteViewing}
-									className={`hover:scale-105 mx-auto text-center  border-2 border-alternative-gold
-									dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
-									px-3 py-2  pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold
-									 hover:bg-white text-[#f1d6b0] dark:text-white dark:hover:text-black
-									  hover:text-primary-blue duration-300`}
+									className={`hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
+                    dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
+                    px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
+                    text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-300`}
 								>
 									<Link
 										href={portfolioItem.link}
-										className="font-base text-base tracking-wide flex "
+										className="font-base text-base tracking-wide flex"
 										target="_blank"
 									>
 										<GoBrowser className="inline self-center mr-2" />
@@ -154,11 +116,10 @@ const PortfolioContent = () => {
 								{portfolioItem.referralLetter ? (
 									<button
 										onClick={handleClickForLetterViewing}
-										className={`ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold
-										dark:border-light-gold  hover:border-primary-blue dark:hover:border-light-gold rounded-xl
-										 px-3 py-2  pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold
-										  hover:bg-white text-[#f1d6b0] dark:text-white dark:hover:text-black
-											 hover:text-primary-blue duration-300`}
+										className={`ml-5 hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
+                      dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
+                      px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
+                      text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-300`}
 									>
 										<Link
 											href={portfolioItem.referralLetter}
@@ -173,11 +134,10 @@ const PortfolioContent = () => {
 								{portfolioItem.sourceCode ? (
 									<button
 										onClick={handleClickForCodeViewing}
-										className={`ml-5 hover:scale-105 mx-auto text-center  border-2 border-alternative-gold
-										dark:border-light-gold  hover:border-primary-blue dark:hover:border-light-gold rounded-xl
-										 px-3 py-2  pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold
-										  hover:bg-white text-[#f1d6b0] dark:text-white dark:hover:text-black
-											 hover:text-primary-blue duration-300`}
+										className={`ml-5 hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
+                      dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
+                      px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
+                      text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-300`}
 									>
 										<Link
 											href={portfolioItem.sourceCode}
@@ -197,12 +157,14 @@ const PortfolioContent = () => {
 		);
 	};
 
+	// Fetch portfolio data on component mount
 	useEffect(() => {
 		fetchPortfolioData();
 	}, []);
 
 	return (
 		<>
+			{/* Heading component with animation */}
 			<Heading
 				animationData={animationData}
 				content={"Check Out My Portfolio Below"}
@@ -212,10 +174,12 @@ const PortfolioContent = () => {
 				<div className="container px-6 m-auto">
 					{!mappedPortfolioItems && <Loader />}
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">
+						{/* Render the mapped portfolio items */}
 						{mappedPortfolioItems}
 					</div>
 				</div>
 			</section>
+			{/* Display the ContactMeContent component after the portfolio */}
 			<ContactMeContent />
 		</>
 	);

@@ -21,6 +21,11 @@ const SkillsList = () => {
 
 	const iconStyles = "mx-auto text-6xl";
 
+	// An array of skills and their corresponding icons
+	// Each skill object contains a 'title' and an 'icon' property
+	// The 'icon' property is an SVG icon component provided by various icon libraries
+	// (e.g., react-icons/fa, react-icons/bi, react-icons/tb, react-icons/fc)
+	// The 'iconStyles' variable sets the default styles for the icons
 	const skills = [
 		{
 			title: "NextJS",
@@ -72,6 +77,7 @@ const SkillsList = () => {
 	];
 
 	const cardVariants = {
+		// Framer Motion variants for card animations
 		offscreen: {
 			y: 500,
 		},
@@ -86,8 +92,11 @@ const SkillsList = () => {
 	};
 
 	const cards = skills.map((skill, idx) => {
+		// Mapping the skills array to create individual cards for each skill
 		let amount;
 
+		// Determine the amount for each card animation based on the index
+		// This will give a staggered effect to the card animations
 		switch (idx) {
 			case 0:
 				amount = 0;
@@ -142,12 +151,14 @@ const SkillsList = () => {
 				<motion.div className="max-w-full" variants={cardVariants}>
 					<div
 						className={`max-w-full overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
-					hover:rounded-3xl hover:text-secondary-gold shadow-lg dark:shadow hover:shadow- dark:hover:shadow-lg
-					 shadow-alternative-blue  hover:shadow-secondary-gold
-					  dark:hover:shadow-secondary-gold border border-primary-gold duration-300`}
+          hover:rounded-3xl hover:text-secondary-gold shadow-lg dark:shadow hover:shadow-dark 
+          dark:hover:shadow-lg shadow-alternative-blue hover:shadow-secondary-gold
+          dark:hover:shadow-secondary-gold border border-primary-gold duration-300`}
 					>
+						{/* Icon of the skill */}
 						<figure className="p-9 pb-0 text-center">{skill.icon}</figure>
 
+						{/* Title of the skill */}
 						<div className="p-6">
 							<h3 className=" text-xl font-base">{skill.title}</h3>
 						</div>
@@ -159,6 +170,7 @@ const SkillsList = () => {
 
 	return (
 		<>
+			{/* Heading section with animation */}
 			<Heading
 				animationData={theme == "dark" ? darkAnimationData : animationData}
 				content={"Some Of The Skills & Awesome Technologies I Use!"}
@@ -166,6 +178,7 @@ const SkillsList = () => {
 			<section className="py-14 md:py-28 bg-primary-blue dark:bg-black overflow-hidden">
 				<div className="container px-6 m-auto">
 					<div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+						{/* Render the cards for each skill */}
 						{cards}
 					</div>
 				</div>

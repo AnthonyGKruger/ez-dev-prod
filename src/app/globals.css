@@ -1,14 +1,25 @@
+/* Tailwind CSS base styles */
 @tailwind base;
+
+/* Tailwind CSS component styles */
 @tailwind components;
+
+/* Tailwind CSS utility styles */
 @tailwind utilities;
 
-
-::selection{
+/* Style for the selected text */
+::selection {
   background-color: #A47F4B;
-  color:#d8e0e8
+  color: #d8e0e8;
 }
 
+/* SVG animations */
+/* The animations target specific elements with IDs like "path1", "path2", etc. */
+/* Each animation uses the "sign" keyframes animation and sets the stroke-dashoffset to 0 at the end of the animation */
+/* The animations have different durations and are applied to various paths in the SVG */
 
+/* Uncomment the following block if you want to apply specific background colors using custom classes */
+/*
 .primary-1 { background-color: #76899D }
 .primary-2 { background-color: #4F6781 }
 .primary-0 { background-color: #354F6B }
@@ -20,6 +31,7 @@
 .complement-0 { background-color: #A4804B }
 .complement-3 { background-color: #87632D }
 .complement-4 { background-color: #624111 }
+*/
 
 
 #path1{

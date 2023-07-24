@@ -1,4 +1,6 @@
+// Asynchronous function that handles the GET request
 export const GET = async (request) => {
+	// An array containing project data objects
 	const responseData = [
 		{
 			id: "p3",
@@ -8,7 +10,8 @@ export const GET = async (request) => {
 			link: "https://ez-staging-ds.vercel.app",
 			image: "/media/logos/ds-logo.png",
 			sourceCode: "",
-			referralLetter:'/media/Digital Stream Referral Letter - Anthony Kruger - web - signed.pdf'
+			referralLetter:
+				"/media/Digital Stream Referral Letter - Anthony Kruger - web - signed.pdf",
 		},
 		{
 			id: "p1",
@@ -17,7 +20,8 @@ export const GET = async (request) => {
 				"Accounting firm website built using NextJS and Tailwind Css",
 			link: "https://mumbi.co.za",
 			image: "/media/logos/mumbi-logo.png",
-			sourceCode: "https://github.com/AnthonyGKruger/Mumbi-Trust-Administrators",
+			sourceCode:
+				"https://github.com/AnthonyGKruger/Mumbi-Trust-Administrators",
 		},
 
 		// {
@@ -47,6 +51,7 @@ export const GET = async (request) => {
 			sourceCode: "",
 		},
 	];
+	// Return a JSON response with the project data and status 200
 	return new Response(JSON.stringify(responseData), {
 		status: 200,
 	});

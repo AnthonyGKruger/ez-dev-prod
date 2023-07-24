@@ -6,20 +6,26 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 
 const Navbar = () => {
+	// State to manage the logo image based on the current theme
 	const [logo, setLogo] = useState("/media/logos/ezdev-logo.png");
 
+	// Get the current page's pathname
 	const pathname = usePathname();
-	const { theme } = useTheme(); 
 
+	// Get the current theme from the useTheme hook
+	const { theme } = useTheme();
+
+	// UseLayoutEffect to change the logo image when the theme changes
 	useLayoutEffect(() => {
-		 theme == "dark"
+		theme == "dark"
 			? setLogo("/media/logos/ezdev-logo-white.png")
 			: setLogo("/media/logos/ezdev-logo.png");
 	}, [theme]);
 
+	// UseEffect to add scroll behavior to the navigation bar
 	useEffect(() => {
 		window.onscroll = function () {
-			scrollFunction(); 
+			scrollFunction();
 		};
 
 		function scrollFunction() {
@@ -41,10 +47,8 @@ const Navbar = () => {
 		}
 	}, []);
 
-	const linkClasses =
-		`navLink col-span-1 py-4 2xl:text-xl font-base dark:text-white text-alternative-blue hover:text-light-gold 
-		dark:hover:text-black hover:border-light-gold  hover:bg-primary-blue dark:hover:bg-light-gold transition-all 
-		duration-300`;
+	// CSS classes for the navigation links
+	const linkClasses = `navLink col-span-1 py-4 2xl:text-xl font-base dark:text-white text-alternative-blue hover:text-light-gold dark:hover:text-black hover:border-light-gold  hover:bg-primary-blue dark:hover:bg-light-gold transition-all duration-300`;
 
 	return (
 		<>
@@ -54,7 +58,6 @@ const Navbar = () => {
 						<Image
 							src={logo}
 							alt="ez-dev logo"
-							// layout="responsive"
 							width={200}
 							height={200}
 							className="object-contain w-auto h-auto"
@@ -62,20 +65,14 @@ const Navbar = () => {
 					</div>
 				</Link>
 			)}
-			{/* <header className="bg-white text-center py-2">
-				<h1 className="text-primary-blue mt-2 mb-0 text-3xl md:text-4xl 2xl:text-5xl font-thin">
-					Anthony Kruger
-				</h1>
-				<h2 className="text-primary-gold mt-2 mb-0 text-sm 2xl:text-lg uppercase">
-					Full Stack Web Developer
-				</h2>
-			</header> */}
+
 			<header className="sticky top-0 z-50">
 				<nav
 					className={`grid grid-cols-4 lg:grid-cols-8 border-t border-b text-center ${
 						pathname == "/" ? "" : "mt-4"
 					} bg-white dark:bg-black border-primary-gold 3xl:px-96 xl:px-46`}
 				>
+					{/* List of navigation links */}
 					<Link className={`${linkClasses} inline`} href="/">
 						Home
 					</Link>

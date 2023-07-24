@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Navbar from "@/components/shared/Navbar";
 import "./globals.css";
 import { Roboto } from "next/font/google";
@@ -15,39 +16,58 @@ import BackToTop from "@/components/shared/BackToTop";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
-export default ({ children }) => {
+// Layout component that wraps the content of the application
+const Layout = ({ children }) => {
 	return (
 		<html lang="en">
+			{/* Load Google Analytics script asynchronously */}
 			<Script
 				strategy="lazyOnload"
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
 			/>
 
+			{/* Define the Google Analytics configuration */}
 			<Script strategy="lazyOnload">
 				{`
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-				page_path: window.location.pathname,
-				});
-		`}
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+          });
+        `}
 			</Script>
 
-			{/* <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script> */}
-
+			{/* Define the body element */}
 			<body
 				className={`${roboto.className} bg-white dark:bg-black dark:text-zinc-200 text-alternative-blue relative`}
 			>
+				{/* Redux store provider */}
 				<Provider store={store}>
+					{/* Theme provider for next-themes */}
 					<ThemeProvider attribute="class">
+						{/* Render the Navbar component */}
 						<Navbar />
+
+						{/* Render the children components passed to the Layout */}
 						{children}
+
+						{/* Render the Companies component */}
 						<Companies />
+
+						{/* Render the Footer component */}
 						<Footer />
+
+						{/* Render the CookieBanner component */}
 						<CookieBanner />
-						<BackToTop/>
+
+						{/* Render the BackToTop component */}
+						<BackToTop />
+
+						{/* Render the ThemeToggle component */}
 						<ThemeToggle />
+
+						{/* Render the Analytics component from @vercel/analytics */}
 						<Analytics />
 					</ThemeProvider>
 				</Provider>
@@ -55,3 +75,5 @@ export default ({ children }) => {
 		</html>
 	);
 };
+
+export default Layout;

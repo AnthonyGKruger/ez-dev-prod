@@ -6,47 +6,55 @@ import { useState, useEffect } from "react";
 import Loader from "@/components/shared/Loader";
 
 const WorkExperienceContent = () => {
-	const [mappedExperience, setMappedExperience] = useState();
+  const [mappedExperience, setMappedExperience] = useState();
 
-	const fetchData = async () => {
-		const response = await fetch("/api/work-experience/");
-		const data = await response.json();
+  // Fetch data from the API endpoint
+  const fetchData = async () => {
+    const response = await fetch("/api/work-experience/");
+    const data = await response.json();
 
-		setMappedExperience(
-			data.map((job, idx) => {
-				return (
-					<WorkExperienceItem
-						key={idx}
-						company={job.company}
-						role={job.role}
-						summary={job.summary}
-						dateFrom={job.dateFrom}
-						dateTo={job.dateTo}
-						comments={job.comments}
-						slideFromRight={idx % 2 == 0 ? true : false}
-					/>
-				);
-			})
-		);
-	};
+    // Map the data to create individual WorkExperienceItem components
+    setMappedExperience(
+      data.map((job, idx) => {
+        return (
+          <WorkExperienceItem
+            key={idx}
+            company={job.company}
+            role={job.role}
+            summary={job.summary}
+            dateFrom={job.dateFrom}
+            dateTo={job.dateTo}
+            comments={job.comments}
+            slideFromRight={idx % 2 === 0 ? true : false}
+          />
+        );
+      })
+    );
+  };
 
-	useEffect(() => {
-		fetchData();
-	}, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-	return (
-		<>
-			<Heading
-				animationData={animationData}
-				subtitle={"Hard Work & Perseverance"}
-				content={"Check Out My Work Experience Below"}
-			/>
+  return (
+    <>
+      {/* Heading component to display the title and animation */}
+      <Heading
+        animationData={animationData}
+        subtitle={"Hard Work & Perseverance"}
+        content={"Check Out My Work Experience Below"}
+      />
 
-			{!mappedExperience && <Loader />}
+      {/* Show Loader component while fetching data */}
+      {!mappedExperience && <Loader />}
 
-			<section className="py-9 max-w-full overflow-hidden bg-light-blue dark:bg-transparent">{mappedExperience}</section>
-		</>
-	);
+      {/* Display the mapped work experience */}
+      <section className="py-9 max-w-full overflow-hidden bg-light-blue dark:bg-transparent">
+        {mappedExperience}
+      </section>
+    </>
+  );
 };
 
 export default WorkExperienceContent;
+

@@ -1,41 +1,72 @@
-# EZDev Solutions
+# EZdev Solutions
 
-This repository contains the source code for the EZDev Solutions website. It provides information and resources related to web development.
+![EZdev Solutions](https://www.ezdev.solutions/media/logos/ezdev-logo-white.png)
+
+## Introduction
+
+Welcome to EZdev Solutions! This is the official repository for the EZdev Solutions website. EZdev Solutions is a web development company specializing in creating stunning and functional websites and web applications.
 
 ## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
 
-## Installation
+## Features
 
-To download and install the EZDev Solutions repository, follow these steps:
+- Responsive and user-friendly design
+- Showcase of portfolio projects
+- Contact form for reaching out to the team
+- Downloadable resume
+- Dark mode support
 
-1. Ensure that you have Node.js and npm (Node Package Manager) installed on your machine. You can download Node.js from the official website: [nodejs.org](https://nodejs.org).
+## Technologies Used
 
-2. Clone this repository to your local machine using Git. Open your terminal or command prompt and run the following command: 
+- [Next.js](https://nextjs.org/) - React framework for server-rendered React applications
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [React Icons](https://react-icons.github.io/react-icons/) - Library for popular icons
+- [Framer Motion](https://www.framer.com/api/motion/) - Animation library for React
+- [Lottie](https://lottiefiles.com/) - Library for adding Lottie animations
+- [Next-themes](https://github.com/pacocoursey/next-themes) - Theme management for Next.js
 
-git clone https://github.com/AnthonyGKruger/ez-dev-prod.git
+## Getting Started
 
-3. Change to the project directory: 
+To get a local copy of the project up and running on your machine, follow the steps below.
 
-cd ezdev-prod
+### Installation
 
-4. Install the project dependencies using npm:
+1. Clone the repository:
+
+git clone https://github.com/your-username/ezdev-solutions.git
+
+2. Change into the project directory:
+
+cd ezdev-solutions
+
+3. Install the required dependencies:
 
 npm install
 
-## Usage
+### Usage
 
-After successfully installing the project, you can run it locally using the following command:
+To start the development server, run:
 
-npm start
+npm run dev
 
+The website will be available at [http://localhost:3000](http://localhost:3000).
 
-This command will start a local development server, and the website will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
+## License
 
-## Usage after cloning
+The project is licensed under the [MIT License](LICENSE).
 
-Please feel free to use the code to your liking, but the code needs to be changed from using my personal information should you wish to use the code.
+## Contact
 
+For any inquiries or feedback, please reach out to me at anthony@ezdev.solutions or visit our website [www.ezdev.solutions](https://www.ezdev.solutions).
+
+Thank you for visiting EZdev Solutions!
