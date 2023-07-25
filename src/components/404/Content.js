@@ -33,6 +33,6 @@ const NotFoundContent = () => {
       </section>
     </>
   );
-};
+};  
 
 export default NotFoundContent;
