@@ -75,7 +75,7 @@ const Hero = () => {
 						>
 							<motion.div variants={cardVariants}>
 								<h1 className="text-5xl text-light-gold md:font-extrabold ">
-									Hi there, My name is Anthony & I am a Full Stack Web
+									Hi there, my name is Anthony & I am a Full Stack Web
 									Developer!
 								</h1>
 								<p className="text-2xl tracking-wide mt-5  text-white">
