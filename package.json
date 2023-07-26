@@ -29,5 +29,8 @@
     "react-use-downloader": "^1.2.4",
     "tailwindcss": "3.3.2",
     "typed.js": "^2.0.16"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0"
   }
 }

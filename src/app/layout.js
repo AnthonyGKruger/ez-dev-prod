@@ -24,7 +24,7 @@ const Layout = ({children}) => {
 
   useLayoutEffect(() => {
     setTheme("dark")
-  }, [])
+  }, [setTheme])
 
   return (
     <html lang="en">
@@ -35,7 +35,7 @@ const Layout = ({children}) => {
     />
 
     {/* Define the Google Analytics configuration */}
-    <Script strategy="lazyOnload">
+    <Script id="google-analytics-config" strategy="lazyOnload">
       {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
