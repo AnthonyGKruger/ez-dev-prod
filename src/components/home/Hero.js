@@ -79,7 +79,7 @@ const Hero = () => {
                                     Developer!
                                 </h1>
                                 <p className="text-2xl tracking-wide mt-5  text-white">
-                                    I`&#39;`m an ambitious and determined individual with a Bachelor`&#39;`s
+                                    I&#39;m an ambitious and determined individual with a Bachelor&#39;s
                                     degree in information technology and three years of experience
                                     in web development.
                                 </p>
@@ -96,7 +96,7 @@ const Hero = () => {
                                             href="#contact-form"
                                             className="font-bold text-xl tracking-wide "
                                         >
-                                            Let`&#39;`s Chat!
+                                            Let&#39;s Chat!
                                         </Link>
                                     </button>
                                 </div>

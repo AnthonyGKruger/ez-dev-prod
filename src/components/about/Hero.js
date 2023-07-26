@@ -56,19 +56,19 @@ const Hero = () => {
                         </h1>
                         {/* Text content introducing the user */}
                         <p className="text-xl tracking-wide mt-5 text-white">
-                            I`&#39;`m an ambitious and determined individual with a Bachelor`&#39;`s
+                            I&#39;m an ambitious and determined individual with a Bachelor&#39;s
                             degree in information technology and three years of experience in
-                            web development. As a successful retail branch manager, I`&#39;`ve honed
+                            web development. As a successful retail branch manager, I&#39;ve honed
                             my management and sales skills, which will be valuable to my
-                            future employer in information technology. I`&#39;`m seeking a role that
+                            future employer in information technology. I&#39;m seeking a role that
                             leverages my interaction skills, operational experience, and
                             positive attitude.
                         </p>
                         <p className="text-xl tracking-wide mt-5 text-white">
-                            I`&#39;`m highly motivated, a fast learner, and a collaborative team
+                            I&#39;m highly motivated, a fast learner, and a collaborative team
                             player who thrives in dynamic and fast-paced environments. When
-                            not coding, I`&#39;`m exploring new technologies or enjoying my time
-                            with family and friends. I`&#39;`m excited about the opportunities ahead
+                            not coding, I&#39;m exploring new technologies or enjoying my time
+                            with family and friends. I&#39;m excited about the opportunities ahead
                             and look forward to connecting with like-minded professionals.
                         </p>
                         <div className="pt-9">
@@ -85,7 +85,7 @@ const Hero = () => {
                                     href="/contact-me"
                                     className="font-bold text-xl tracking-wide "
                                 >
-                                    Let`&#39;`s Chat!
+                                    Let&#39;s Chat!
                                 </Link>
                             </button>
                         </div>
