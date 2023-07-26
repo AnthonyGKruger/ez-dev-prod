@@ -57,19 +57,24 @@ const Hero = () => {
                         {/* Text content introducing the user */}
                         <p className="text-xl tracking-wide mt-5 text-white">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            I'm an ambitious and determined individual with a Bachelor&#39;s
+                            I'm an ambitious and determined individual with a Bachelor's
                             degree in information technology and three years of experience in
-                            web development. As a successful retail branch manager, I&#39;ve honed
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            web development. As a successful retail branch manager, I've honed
                             my management and sales skills, which will be valuable to my
-                            future employer in information technology. I&#39;m seeking a role that
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            future employer in information technology. I'm seeking a role that
                             leverages my interaction skills, operational experience, and
                             positive attitude.
                         </p>
                         <p className="text-xl tracking-wide mt-5 text-white">
-                            I&#39;m highly motivated, a fast learner, and a collaborative team
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            I'm highly motivated, a fast learner, and a collaborative team
                             player who thrives in dynamic and fast-paced environments. When
-                            not coding, I&#39;m exploring new technologies or enjoying my time
-                            with family and friends. I&#39;m excited about the opportunities ahead
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            not coding, I'm exploring new technologies or enjoying my time
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            with family and friends. I'm excited about the opportunities ahead
                             and look forward to connecting with like-minded professionals.
                         </p>
                         <div className="pt-9">
@@ -86,7 +91,8 @@ const Hero = () => {
                                     href="/contact-me"
                                     className="font-bold text-xl tracking-wide "
                                 >
-                                    Let&#39;s Chat!
+                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                                    Let's Chat!
                                 </Link>
                             </button>
                         </div>

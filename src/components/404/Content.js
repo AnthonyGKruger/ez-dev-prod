@@ -24,7 +24,8 @@ const NotFoundContent = () => {
                         animationData={animationData}
                     />
                     <p className="text-center text-2xl px-5">
-                        Sorry, we can&#39;t find the page you are looking for.
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
+                        Sorry, we can't find the page you are looking for.
                     </p>
                 </div>
                 <p className="text-center italic font-thin mt-5 px-5">
