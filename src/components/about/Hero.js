@@ -56,7 +56,8 @@ const Hero = () => {
                         </h1>
                         {/* Text content introducing the user */}
                         <p className="text-xl tracking-wide mt-5 text-white">
-                            I&#39;m an ambitious and determined individual with a Bachelor&#39;s
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            I'm an ambitious and determined individual with a Bachelor&#39;s
                             degree in information technology and three years of experience in
                             web development. As a successful retail branch manager, I&#39;ve honed
                             my management and sales skills, which will be valuable to my
