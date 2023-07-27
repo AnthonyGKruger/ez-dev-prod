@@ -96,10 +96,6 @@ const ContactMeContent = () => {
         );
     };
 
-    const inputContainerClasses =
-        `flex items-center p-2 border border-primary-blue dark:border-primary-gold focus:border-primary-gold 
-		dark:focus:border-primary-blue rounded-md active:border-primary-blue`;
-    const inputClasses = "w-full p-1 ml-3  outline-none bg-transparent";
 
     // Banner to display a warning when there are errors in the form inputs
     const WarningBanner = () => {
@@ -133,11 +129,14 @@ const ContactMeContent = () => {
                             d="M13 10V3L4 14h7v7l9-11h-7z"
                         />
                     </svg>
-                    <h3 className="flex-1 font-semibold">Input Error!</h3>
-                    <p>
-                        There is an error with one or more of the input fields, please make
-                        sure you have entered valid information.
-                    </p>
+                    <div className="flex-1 font-semibold">
+                        <h3 className="text-xl">Input Error!</h3>
+                        <p>
+                            There is an error with one or more of the input fields, please make
+                            sure you have entered valid information.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         );
@@ -176,15 +175,28 @@ const ContactMeContent = () => {
                             d="M13 10V3L4 14h7v7l9-11h-7z"
                         />
                     </svg>
-                    <h3 className="flex-1 font-semibold">Error!</h3>
-                    <p>
-                        There was an error that occurred while submitting the form, please
-                        try again.
-                    </p>
+                    <div className="flex-1 font-semibold">
+                        <h3 className={`text-xl`}>Error!</h3>
+                        <p>
+                            There was an error that occurred while submitting the form, please
+                            try again.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         );
     };
+
+    const inputClasses = `flex items-center p-2  rounded-md 
+    border border-primary-blue dark:border-primary-gold 
+    focus:border-primary-gold dark:focus:border-primary-blue
+		 active:border-primary-blue dark:active:border-primary-blue
+		w-full p-1  outline-none bg-transparent`;
+
+    const inputErrorClasses = `border-red-500 dark:border-red-500 
+    focus:border-red-500 dark:focus:border-red-500
+		 active:border-red-500 dark:active:border-red-500`
 
     // Render the component
     return (
@@ -228,21 +240,21 @@ const ContactMeContent = () => {
                         >
                             <fieldset id="contact_me" className="b--transparent ph0 mh0">
                                 {/* Form inputs */}
+
                                 <label htmlFor="name" className="block py-3 ">
                                     Your Name
                                 </label>
-                                <div
-                                    className={`${inputContainerClasses} ${
-                                        contactFormState.inputHasError.nameHasError
-                                            ? "border-red-500 dark:border-red-500"
-                                            : "border-green-600 dark:border-green-600"
-                                    }`}
-                                >
+
+                                <div>
                                     <input
                                         type="text"
                                         id="name"
                                         name="from_name"
-                                        className={`${inputClasses}`}
+                                        className={`${inputClasses} ${
+                                            contactFormState.inputHasError.nameHasError
+                                                ? inputErrorClasses
+                                                : ""
+                                        }`}
                                         required
                                         onChange={inputChangeHandler}
                                     />
@@ -251,18 +263,16 @@ const ContactMeContent = () => {
                                 <label htmlFor="email" className="block py-3 ">
                                     Your Email
                                 </label>
-                                <div
-                                    className={`${inputContainerClasses} ${
-                                        contactFormState.inputHasError.emailHasError
-                                            ? "border-red-500 dark:border-red-500"
-                                            : "border-green-600 dark:border-green-600"
-                                    }`}
-                                >
+                                <div>
                                     <input
                                         type="email"
                                         id="email"
                                         name="reply_to"
-                                        className={`${inputClasses}`}
+                                        className={`${inputClasses} ${
+                                            contactFormState.inputHasError.emailHasError
+                                                ? inputErrorClasses
+                                                : ""
+                                        }`}
                                         required
                                         onChange={inputChangeHandler}
                                     />
@@ -271,37 +281,34 @@ const ContactMeContent = () => {
                                 <label htmlFor="company" className="block py-3 ">
                                     Your Company
                                 </label>
-                                <div
-                                    className={`${inputContainerClasses} ${
-                                        contactFormState.inputHasError.companyHasError
-                                            ? "border-red-500 dark:border-red-500"
-                                            : "border-green-600 dark:border-green-600"
-                                    }`}
-                                >
+                                <div>
                                     <input
                                         type="text"
                                         id="company"
                                         name="company"
-                                        className={`${inputClasses}`}
+                                        className={`${inputClasses} ${
+                                            contactFormState.inputHasError.companyHasError
+                                                ? inputErrorClasses
+                                                : ""
+                                        }`}
                                         required
                                         onChange={inputChangeHandler}
                                     />
                                 </div>
-
                                 <label htmlFor="comments" className="block py-3 ">
                                     Additional Information
                                 </label>
                                 <div
-                                    className={`${inputContainerClasses} ${
-                                        contactFormState.inputHasError.commentsHasError
-                                            ? "border-red-500 dark:border-red-500"
-                                            : "border-green-600 dark:border-green-600"
-                                    }`}
+
                                 >
 									<textarea
                                         id="comments"
                                         name="comments"
-                                        className={`${inputClasses}`}
+                                        className={`${inputClasses} ${
+                                            contactFormState.inputHasError.commentsHasError
+                                                ? inputErrorClasses
+                                                : ""
+                                        }`}
                                         onChange={inputChangeHandler}
                                     />
                                 </div>
@@ -385,3 +392,4 @@ const ContactMeContent = () => {
 };
 
 export default ContactMeContent;
+
