@@ -22,7 +22,7 @@ const SkillsList = () => {
     // The 'iconStyles' variable sets the default styles for the icons
     const skills = [
         {
-            title: "NextJS",
+            title: "Next.js",
             icon: (
                 <TbBrandNextjs className={`${iconStyles} text-black dark:text-white`}/>
             ),
