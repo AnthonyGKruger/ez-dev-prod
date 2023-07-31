@@ -6,7 +6,8 @@ export const GET = async (request) => {
             id: "p3",
             title: "Digital Stream",
             description:
-                "Digital marketing agency website built using Next.js and Tailwind Css \n(the code to for this project is unfortunately not available for public viewing)",
+                "Digital marketing agency website built using Next.js and Tailwind CSS \n(the code to for this" +
+                " project is unfortunately not available for public viewing)",
             link: "https://ez-staging-ds.vercel.app",
             image: "/media/logos/ds-logo.png",
             sourceCode: "",
@@ -17,7 +18,7 @@ export const GET = async (request) => {
             id: "p1",
             title: "Mumbi Trust Administrators",
             description:
-                "Accounting firm website built using Next.js and Tailwind Css",
+                "Accounting firm website built using Next.js and Tailwind CSS",
             link: "https://mumbi.co.za",
             image: "/media/logos/mumbi-logo.png",
             sourceCode:
