@@ -1,6 +1,7 @@
+'use client'
 // Import statements
 import ScrollToTop from "react-scroll-up";
-import { BiSolidUpArrow } from "react-icons/bi";
+import {BiSolidUpArrow} from "react-icons/bi";
 
 // BackToTop component
 const BackToTop = () => {

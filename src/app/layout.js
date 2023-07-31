@@ -1,30 +1,30 @@
-"use client";
-import React, {useLayoutEffect} from "react";
+// "use client";
+// import React, {useLayoutEffect} from "react";
 import Navbar from "@/components/shared/Navbar";
 import "./globals.css";
 import {Roboto} from "next/font/google";
-import {Provider} from "react-redux";
-import store from "@/store/index";
+// import {Provider} from "react-redux";
+// import store from "@/store/index";
 import {Analytics} from "@vercel/analytics/react";
 import Script from "next/script";
 import Footer from "@/components/shared/Footer";
 import CookieBanner from "@/components/shared/CookieBanner";
 import Companies from "@/components/shared/Companies";
 import ThemeToggle from "@/components/shared/ThemeToggle";
-import {ThemeProvider} from "next-themes";
 import BackToTop from "@/components/shared/BackToTop";
-import {useTheme} from "next-themes";
+import ThemeProviderHelper from "@/components/shared/ThemeProviderHelper";
+import ReduxProviderHelper from "@/components/shared/ReduxProviderHelper";
 
 const roboto = Roboto({subsets: ["latin"], weight: "300"});
 
 // Layout component that wraps the content of the application
 const Layout = ({children}) => {
 
-  const {setTheme} = useTheme();
+  // const {setTheme} = useTheme();
 
-  useLayoutEffect(() => {
-    setTheme("dark")
-  }, [setTheme])
+  // useLayoutEffect(() => {
+  //   setTheme("dark")
+  // }, [setTheme])
 
   return (
     <html lang="en">
@@ -51,9 +51,10 @@ const Layout = ({children}) => {
       className={`${roboto.className} bg-white dark:bg-black dark:text-zinc-200 text-alternative-blue relative`}
     >
     {/* Redux store provider */}
-    <Provider store={store}>
+    <ReduxProviderHelper>
       {/* Theme provider for next-themes */}
-      <ThemeProvider attribute="class">
+      <ThemeProviderHelper>
+        {/*<ThemeProvider attribute="class">*/}
         {/* Render the Navbar component */}
         <Navbar/>
 
@@ -77,8 +78,10 @@ const Layout = ({children}) => {
 
         {/* Render the Analytics component from @vercel/analytics */}
         <Analytics/>
-      </ThemeProvider>
-    </Provider>
+        {/*</ThemeProvider>*/}
+      </ThemeProviderHelper>
+
+    </ReduxProviderHelper>
     </body>
     </html>
   );

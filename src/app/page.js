@@ -2,19 +2,27 @@ import React from 'react';
 import Hero from '@/components/home/Hero';
 import Skills from './skills/page';
 import Portfolio from './portfolio/page';
+import WorkExperience from "@/app/work-experience/page";
+import Qualifications from "@/app/qualifications/page";
 
 // Home component representing the home page of the portfolio website
 const Home = () => {
   return (
     <main className="">
       {/* Display the Hero component */}
-      <Hero />
+      <Hero/>
 
       {/* Display the Skills component */}
-      <Skills />
+      <Skills/>
 
       {/* Display the Portfolio component */}
-      <Portfolio />
+      <Portfolio/>
+
+      {/* Display the Qualifications component */}
+      <Qualifications/>
+
+      {/* Display the WorkExperience component */}
+      <WorkExperience/>
     </main>
   );
 };
@@ -25,8 +33,8 @@ export const metadata = {
   description: "EZdev portfolio",
   viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
   icons: [
-    { rel: 'icon', url: '/code.png' },
-    { rel: 'apple', url: '/code.png' },
+    {rel: 'icon', url: '/code.png'},
+    {rel: 'apple', url: '/code.png'},
   ],
 };
 
