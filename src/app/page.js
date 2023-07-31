@@ -7,24 +7,22 @@ import Qualifications from "@/app/qualifications/page";
 
 // Home component representing the home page of the portfolio website
 const Home = () => {
-  return (
-    <main className="">
-      {/* Display the Hero component */}
-      <Hero/>
+  return (<main className="">
+    {/* Display the Hero component */}
+    <Hero/>
 
-      {/* Display the Skills component */}
-      <Skills/>
+    {/* Display the Skills component */}
+    <Skills/>
 
-      {/* Display the Portfolio component */}
-      <Portfolio/>
+    {/* Display the Portfolio component */}
+    <Portfolio/>
 
-      {/* Display the Qualifications component */}
-      <Qualifications/>
+    {/* Display the Qualifications component */}
+    <Qualifications/>
 
-      {/* Display the WorkExperience component */}
-      <WorkExperience/>
-    </main>
-  );
+    {/* Display the WorkExperience component */}
+    <WorkExperience/>
+  </main>);
 };
 
 // Metadata for the home page
@@ -32,10 +30,7 @@ export const metadata = {
   title: "Home - Anthony Gordon Kruger's Portfolio",
   description: "EZdev portfolio",
   viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
-  icons: [
-    {rel: 'icon', url: '/code.png'},
-    {rel: 'apple', url: '/code.png'},
-  ],
+  icons: [{rel: 'icon', url: '/code.png'}, {rel: 'apple', url: '/code.png'},],
 };
 
 // Export the Home component as the default export

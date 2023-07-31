@@ -1,10 +1,6 @@
-// "use client";
-// import React, {useLayoutEffect} from "react";
 import Navbar from "@/components/shared/Navbar";
 import "./globals.css";
 import {Roboto} from "next/font/google";
-// import {Provider} from "react-redux";
-// import store from "@/store/index";
 import {Analytics} from "@vercel/analytics/react";
 import Script from "next/script";
 import Footer from "@/components/shared/Footer";
@@ -19,12 +15,6 @@ const roboto = Roboto({subsets: ["latin"], weight: "300"});
 
 // Layout component that wraps the content of the application
 const Layout = ({children}) => {
-
-  // const {setTheme} = useTheme();
-
-  // useLayoutEffect(() => {
-  //   setTheme("dark")
-  // }, [setTheme])
 
   return (
     <html lang="en">

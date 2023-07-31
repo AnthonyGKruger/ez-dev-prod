@@ -1,27 +1,10 @@
-'use client'
-// Import statements
-import Image from "next/image";
 import Link from "next/link";
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
-import {useRouter} from "next/navigation";
-import {useLayoutEffect, useState} from "react";
-import {useTheme} from "next-themes";
+import HeaderFooterLogo from "@/components/shared/HeaderFooterLogo";
+
 
 const Footer = () => {
-  // State to manage the logo image based on the current theme (light or dark)
-  const [logo, setLogo] = useState("/media/logos/ezdev-logo-white.png");
-  const {theme} = useTheme();
 
-  // Use layout effect to update the logo image when the theme changes
-  useLayoutEffect(() => {
-    theme === "dark"
-      ? setLogo("/media/logos/ezdev-logo-white.png")
-      : setLogo("/media/logos/ezdev-logo.png");
-  }, [theme]);
-
-  const {push} = useRouter();
-
-  // Footer navigation links
   const footerNavs = [
     {
       href: "/",
@@ -54,16 +37,8 @@ const Footer = () => {
       <div className="mx-auto">
         <div className="justify-center sm:flex">
           <div className="space-y-6 cursor-pointer">
-            {/* Company logo */}
-            <Image
-              src={logo}
-              alt="ez-dev logo"
-              height={300}
-              width={200}
-              className="mx-auto"
-              onClick={() => push("/")} // Clicking the logo navigates to the homepage
-            />
 
+            <HeaderFooterLogo/>
             <ul className="flex flex-wrap items-center gap-4 text-sm 2xl:text-xl sm:text-base justify-center">
               {/* Footer navigation links */}
               {footerNavs.map((item, idx) => (
