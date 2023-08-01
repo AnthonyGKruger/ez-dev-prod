@@ -31,7 +31,6 @@ const Hero = () => {
                 <HeroButton/>
               </div>
             </HomeMotionDiv>
-
           </div>
         </div>
       </div>
