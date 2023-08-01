@@ -1,49 +1,15 @@
-"use client";
-
-import Image from "next/image"; // Importing the Next.js Image component for optimized images
-import Link from "next/link"; // Importing Next.js Link component for client-side navigation
-import {motion} from "framer-motion"; // Importing the Framer Motion library for animations
+import HeroImage from "@/components/about/HeroImage";
+import AboutHeroButton from "@/components/about/AboutHeroButton";
 
 // Hero component representing the hero section of the "About Me" page
 const Hero = () => {
-  // Define animation variants for the card animation
-  const cardVariants = {
-    offscreen: {
-      x: -4000, // Move the card offscreen initially
-    }, onscreen: {
-      x: 0, // Move the card onscreen with animation
-      transition: {
-        type: "spring", bounce: 0.2, duration: 1.5,
-      },
-    },
-  };
 
   return (<section className="lg:py-20 pb-9 bg-alternative-blue dark:bg-transparent">
     <div className="container px-6 m-auto">
       <div className="grid grid-cols-4 gap-6 md:grid-cols-4 lg:grid-cols-12 ">
         {/* Column for displaying image */}
         <div className="col-span-4 lg:col-span-5 ">
-          {/* Use Framer Motion to animate the card */}
-          <motion.div
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{once: true, amount: 0.8}}
-          >
-            <motion.div variants={cardVariants}>
-              <div className="w-full h-full flex py-9 xl:py-9 lg:py-14 px-9 bg-transparent">
-                {/* Display the image using the optimized Next.js Image component */}
-                <Image
-                  src={"/media/AnthonyIllustrated.jpeg"}
-                  alt="Anthony Kruger"
-                  className={`rounded-full shadow-lg hover:shadow-xl shadow-primary-gold hover:shadow-light-gold
-                     border border-primary-gold hover:border-primary-blue self-center
-                     mx-auto transition-all duration-500 hover:relative`}
-                  width={400}
-                  height={400}
-                />
-              </div>
-            </motion.div>
-          </motion.div>
+          <HeroImage/>
         </div>
         {/* Column for displaying text content */}
         <div className="col-span-4 lg:col-span-7 bg-transparent">
@@ -69,22 +35,7 @@ const Hero = () => {
           </p>
           <div className="pt-9">
             {/* Button to navigate to the "Contact Me" page */}
-            <button
-              className={`w-full md:w-auto hover:scale-105 mx-auto text-center  border-2
-                            border-alternative-gold dark:border-light-gold hover:border-primary-gold rounded-full px-5 py-4  pointer
-                            bg-light-gold dark:bg-black hover:bg-white dark:hover:bg-light-gold
-                            text-alternative-blue hover:text-alternative-gold dark:text-white
-                            dark:hover:text-black
-                            duration-300`}
-            >
-              <Link
-                href="/contact-me"
-                className="font-bold text-xl tracking-wide "
-              >
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Let's Chat!
-              </Link>
-            </button>
+            <AboutHeroButton/>
           </div>
         </div>
       </div>
