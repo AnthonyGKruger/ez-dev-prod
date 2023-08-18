@@ -15,6 +15,15 @@ export const GET = async (request) => {
         "/media/Digital Stream Referral Letter - Anthony Kruger - web - signed.pdf",
     },
     {
+      id: "p2",
+      title: "Digital Payment Transformation Services",
+      description:
+        "Ecommerce app built using NextJS, Tailwind and Strapi - (still under development.)",
+      link: "https://inhonourofalegend.vercel.app",
+      image: "/media/logos/DPTS.png",
+      sourceCode: "https://github.com/AnthonyGKruger/dpts-prod",
+    },
+    {
       id: "p1",
       title: "Mumbi Trust Administrators",
       description:
@@ -42,15 +51,6 @@ export const GET = async (request) => {
     // 	image: "/media/logos/star-wars-logo.svg",
     // 	sourceCode: "https://github.com/AnthonyGKruger/swapi-ecommerce",
     // },
-    {
-      id: "p2",
-      title: "Digital Payment Transformation Services",
-      description:
-        "Ecommerce app built using NextJS, Tailwind and Strapi - (still under development.)",
-      link: "https://inhonourofalegend.vercel.app",
-      image: "/media/logos/DPTS.png",
-      sourceCode: "https://github.com/AnthonyGKruger/dpts-prod",
-    },
   ];
   // Return a JSON response with the project data and status 200
   return new Response(JSON.stringify(responseData), {
