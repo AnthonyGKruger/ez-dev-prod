@@ -8,7 +8,7 @@ export const GET = async (request) => {
       description:
         "Digital marketing agency website built using Next.js and Tailwind CSS \n(the code to for this" +
         " project is unfortunately not available for public viewing)",
-      link: "https://ez-staging-ds.vercel.app",
+      link: "https://digitalstream.co.za",
       image: "/media/logos/ds-logo.png",
       sourceCode: "",
       referralLetter:
