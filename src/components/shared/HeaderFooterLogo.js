@@ -8,13 +8,15 @@ import Link from "next/link";
 const HeaderFooterLogo = () => {
   // State to manage the logo image based on the current theme (light or dark)
   const [logo, setLogo] = useState("/media/logos/ezdev-logo-white.png");
-  const { systemTheme } = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
+  // Determine the current theme (either "light" or "dark")
+  const currentTheme = theme === "system" ? systemTheme : theme;
   const { push } = useRouter();
   const pathname = usePathname();
 
   // Use layout effect to update the logo image when the theme changes
   useLayoutEffect(() => {
-    systemTheme === "dark"
+    currentTheme === "dark"
       ? setLogo("/media/logos/ezdev-logo-white.png")
       : setLogo("/media/logos/ezdev-logo.png");
   }, [systemTheme]);
