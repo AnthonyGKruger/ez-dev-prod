@@ -1,24 +1,23 @@
-"use client"
-import {useTheme} from "next-themes";
-import {useEffect, useLayoutEffect, useState} from "react";
-import {usePathname, useRouter} from "next/navigation";
+"use client";
+import { useTheme } from "next-themes";
+import { useEffect, useLayoutEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
 const HeaderFooterLogo = () => {
-
   // State to manage the logo image based on the current theme (light or dark)
   const [logo, setLogo] = useState("/media/logos/ezdev-logo-white.png");
-  const {theme} = useTheme();
-  const {push} = useRouter();
+  const { systemTheme } = useTheme();
+  const { push } = useRouter();
   const pathname = usePathname();
 
   // Use layout effect to update the logo image when the theme changes
   useLayoutEffect(() => {
-    theme === "dark"
+    systemTheme === "dark"
       ? setLogo("/media/logos/ezdev-logo-white.png")
       : setLogo("/media/logos/ezdev-logo.png");
-  }, [theme]);
+  }, [systemTheme]);
 
   useEffect(() => {
     window.onscroll = function () {
@@ -44,19 +43,18 @@ const HeaderFooterLogo = () => {
     }
   }, []);
 
-  return (
-    pathname === "/" ? null :
-      <Link href="/" className="flex justify-evenly">
-        <Image
-          src={logo}
-          alt="ez-dev logo"
-          height={300}
-          width={200}
-          className="mx-auto"
-          onClick={() => push("/")} // Clicking the logo navigates to the homepage
-        />
-      </Link>
-  )
-}
+  return pathname === "/" ? null : (
+    <Link href="/" className="flex justify-evenly">
+      <Image
+        src={logo}
+        alt="ez-dev logo"
+        height={300}
+        width={200}
+        className="mx-auto"
+        onClick={() => push("/")} // Clicking the logo navigates to the homepage
+      />
+    </Link>
+  );
+};
 
 export default HeaderFooterLogo;

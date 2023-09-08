@@ -1,14 +1,13 @@
 "use client";
-import {TbBrandAzure, TbBrandNextjs} from "react-icons/tb";
-import {FaHtml5, FaPhp, FaReact, FaWordpress} from "react-icons/fa";
-import {BiLogoJavascript} from "react-icons/bi";
-import {SiTailwindcss} from "react-icons/si"
-import {FcLinux} from "react-icons/fc";
-import {motion} from "framer-motion";
+import { TbBrandAzure, TbBrandNextjs } from "react-icons/tb";
+import { FaHtml5, FaPhp, FaReact, FaWordpress } from "react-icons/fa";
+import { BiLogoJavascript } from "react-icons/bi";
+import { SiTailwindcss } from "react-icons/si";
+import { FcLinux } from "react-icons/fc";
+import { motion } from "framer-motion";
 import SkillsAnimatedHeading from "@/components/skills/SkillsAnimatedHeading";
 
 const SkillsList = () => {
-
   const iconStyles = "mx-auto text-6xl";
 
   // An array of skills and their corresponding icons
@@ -20,28 +19,28 @@ const SkillsList = () => {
     {
       title: "Next.js",
       icon: (
-        <TbBrandNextjs className={`${iconStyles} text-black dark:text-white`}/>
+        <TbBrandNextjs className={`${iconStyles} text-black dark:text-white`} />
       ),
     },
     {
       title: "ReactJS",
-      icon: <FaReact className={`${iconStyles} text-blue-600`}/>,
+      icon: <FaReact className={`${iconStyles} text-blue-600`} />,
     },
     {
       title: "Tailwind Css",
-      icon: <SiTailwindcss className={`${iconStyles} text-blue-500`}/>,
+      icon: <SiTailwindcss className={`${iconStyles} text-blue-500`} />,
     },
     {
       title: "JavaScript",
-      icon: <BiLogoJavascript className={`${iconStyles} text-yellow-500`}/>,
+      icon: <BiLogoJavascript className={`${iconStyles} text-yellow-500`} />,
     },
     {
       title: "HTML",
-      icon: <FaHtml5 className={`${iconStyles} text-rose-500`}/>,
+      icon: <FaHtml5 className={`${iconStyles} text-rose-500`} />,
     },
     {
       title: "PHP",
-      icon: <FaPhp className={`${iconStyles} text-purple-800`}/>,
+      icon: <FaPhp className={`${iconStyles} text-purple-800`} />,
     },
     // {
     // 	title: "Java",
@@ -57,13 +56,13 @@ const SkillsList = () => {
     // },
     {
       title: "WordPress",
-      icon: <FaWordpress className={`${iconStyles} text-blue-800`}/>,
+      icon: <FaWordpress className={`${iconStyles} text-blue-800`} />,
     },
     {
       title: "Azure",
-      icon: <TbBrandAzure className={`${iconStyles} text-blue-500`}/>,
+      icon: <TbBrandAzure className={`${iconStyles} text-blue-500`} />,
     },
-    {title: "Linux", icon: <FcLinux className={`${iconStyles} `}/>},
+    { title: "Linux", icon: <FcLinux className={`${iconStyles} `} /> },
   ];
 
   const cardVariants = {
@@ -87,46 +86,22 @@ const SkillsList = () => {
 
     // Determine the amount for each card animation based on the index
     // This will give a staggered effect to the card animations
-    switch (idx) {
-      case 0:
-        amount = 0;
-        break;
-      case 1:
-        amount = 0.3;
-        break;
-      case 2:
-        amount = 0.6;
-        break;
-      case 3:
-        amount = 0.9;
-        break;
-      case 4:
-        amount = 0;
-        break;
-      case 5:
-        amount = 0.3;
-        break;
-      case 6:
-        amount = 0.6;
-        break;
-      case 7:
-        amount = 0.9;
-        break;
-      case 8:
-        amount = 0;
-        break;
-      case 9:
-        amount = 0.3;
-        break;
-      case 10:
-        amount = 0.6;
-        break;
-      case 11:
-        amount = 0.9;
-        break;
-      default:
-        amount = 0;
-    }
+    const amountMap = {
+      0: 0,
+      1: 0.3,
+      2: 0.6,
+      3: 0,
+      4: 0.3,
+      5: 0.6,
+      6: 0,
+      7: 0.3,
+      8: 0.6,
+      9: 0,
+      10: 0.3,
+      11: 0.6,
+    };
+
+    amount = amountMap[idx] || 0;
 
     return (
       <motion.div
@@ -134,9 +109,9 @@ const SkillsList = () => {
         className="col-span-2  lg:col-span-4 max-w-full"
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{once: true, amount: amount}}
-        whileHover={{scale: 1.1}}
-        transition={{type: "spring", stiffness: 0, damping: 50}}
+        viewport={{ once: true, amount: amount }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 0, damping: 50 }}
       >
         <motion.div className="max-w-full" variants={cardVariants}>
           <div
@@ -160,7 +135,7 @@ const SkillsList = () => {
 
   return (
     <>
-      <SkillsAnimatedHeading/>
+      <SkillsAnimatedHeading />
       <section className="py-14 md:py-28 bg-primary-blue dark:bg-black overflow-hidden">
         <div className="container px-6 m-auto">
           <div className="grid grid-cols-4 gap-6 md:grid-cols-6 lg:grid-cols-12">
@@ -174,4 +149,3 @@ const SkillsList = () => {
 };
 
 export default SkillsList;
-
