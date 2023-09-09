@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
       {/*  src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}*/}
       {/*/>*/}
 
-      {/*/!*/!*Define the Google Analytics configuration *!/*!/*/}
+      {/*/Define the Google Analytics configuration /*/}
       {/*<Script id="google-analytics-config" strategy="lazyOnload">*/}
       {/*  {`*/}
       {/*      window.dataLayer = window.dataLayer || [];*/}
