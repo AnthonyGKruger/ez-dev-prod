@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
             src="https://www.googletagmanager.com/ns.html?id=GTM-WRTN27BM"
             height="0"
             width="0"
-            style="display:none;visibility:hidden"
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
 
