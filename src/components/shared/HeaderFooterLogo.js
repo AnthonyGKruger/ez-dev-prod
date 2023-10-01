@@ -19,7 +19,7 @@ const HeaderFooterLogo = () => {
     currentTheme === "dark"
       ? setLogo("/media/logos/ezdev-logo-white.png")
       : setLogo("/media/logos/ezdev-logo.png");
-  }, [systemTheme]);
+  }, [currentTheme]);
 
   useEffect(() => {
     window.onscroll = function () {
