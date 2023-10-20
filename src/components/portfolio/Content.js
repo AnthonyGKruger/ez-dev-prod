@@ -88,7 +88,7 @@ const PortfolioContent = () => {
               className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
                 hover:rounded-3xl hover:text-secondary-gold dark:hover:text-light-gold shadow-lg dark:shadow 
                 hover:shadow dark:hover:shadow-lg shadow-alternative-blue hover:shadow-secondary-gold 
-                dark:hover:shadow-secondary-gold border border-primary-gold duration-300 flex flex-col justify-center`}
+                dark:hover:shadow-secondary-gold border border-primary-gold duration-5000 flex flex-col justify-center`}
               variants={cardVariants}
             >
               <div className="flex justify-center items-center h-full">
@@ -118,7 +118,7 @@ const PortfolioContent = () => {
                   className={`hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
                     dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
                     px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
-                    text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-300`}
+                    text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-500`}
                 >
                   <Link
                     href={portfolioItem.link}
@@ -135,7 +135,7 @@ const PortfolioContent = () => {
                     className={`ml-5 hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
                       dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
                       px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
-                      text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-300`}
+                      text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-500`}
                   >
                     <Link
                       href={portfolioItem.referralLetter}
@@ -153,7 +153,7 @@ const PortfolioContent = () => {
                     className={`ml-5 hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
                       dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
                       px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
-                      text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-300`}
+                      text-[#f1d6b0] dark:text-white dark:hover:text-black hover:text-primary-blue duration-500`}
                   >
                     <Link
                       href={portfolioItem.sourceCode}

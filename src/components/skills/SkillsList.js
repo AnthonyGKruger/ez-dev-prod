@@ -118,7 +118,7 @@ const SkillsList = () => {
             className={`max-w-full overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
           hover:rounded-3xl hover:text-secondary-gold shadow-lg dark:shadow hover:shadow-dark 
           dark:hover:shadow-lg shadow-alternative-blue hover:shadow-secondary-gold
-          dark:hover:shadow-secondary-gold border border-primary-gold duration-300`}
+          dark:hover:shadow-secondary-gold border border-primary-gold duration-500`}
           >
             {/* Icon of the skill */}
             <figure className="p-9 pb-0 text-center">{skill.icon}</figure>

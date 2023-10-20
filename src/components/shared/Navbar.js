@@ -5,7 +5,7 @@ import HeaderFooterLogo from "@/components/shared/HeaderFooterLogo";
 
 const Navbar = () => {
   // CSS classes for the navigation links
-  const linkClasses = `navLink col-span-1 py-4 2xl:text-xl font-base dark:text-white text-alternative-blue hover:text-light-gold dark:hover:text-black hover:border-light-gold  hover:bg-primary-blue dark:hover:bg-light-gold transition-all duration-300`;
+  const linkClasses = `navLink col-span-1 py-4 2xl:text-xl font-base dark:text-white text-alternative-blue hover:text-light-gold dark:hover:text-black hover:border-light-gold  hover:bg-primary-blue dark:hover:bg-light-gold transition-all duration-500`;
 
   return (
     <>
