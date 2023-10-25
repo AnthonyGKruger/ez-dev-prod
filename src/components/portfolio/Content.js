@@ -88,7 +88,7 @@ const PortfolioContent = () => {
               className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
                 hover:rounded-3xl hover:text-secondary-gold dark:hover:text-light-gold shadow-lg dark:shadow 
                 hover:shadow dark:hover:shadow-lg shadow-alternative-blue hover:shadow-secondary-gold 
-                dark:hover:shadow-secondary-gold border border-primary-gold duration-5000 flex flex-col justify-center`}
+                dark:hover:shadow-secondary-gold border border-primary-gold duration-[4000ms] flex flex-col justify-center`}
               variants={cardVariants}
             >
               <div className="flex justify-center items-center h-full">

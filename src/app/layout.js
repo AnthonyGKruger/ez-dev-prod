@@ -65,8 +65,8 @@ const Layout = ({ children }) => {
             <Navbar />
 
             {/* Render the children components passed to the Layout */}
-            {children}
 
+            <div className={"pt-28"}>{children}</div>
             {/* Render the Companies component */}
             <Companies />
 
