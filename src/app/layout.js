@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/components/shared/Navbar";
 import "./globals.css";
 import { Roboto } from "next/font/google";
@@ -10,11 +11,14 @@ import ThemeToggle from "@/components/shared/ThemeToggle";
 import BackToTop from "@/components/shared/BackToTop";
 import ThemeProviderHelper from "@/components/shared/ThemeProviderHelper";
 import ReduxProviderHelper from "@/components/shared/ReduxProviderHelper";
+import { usePathname } from "next/navigation";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
 // Layout component that wraps the content of the application
 const Layout = ({ children }) => {
+  const pathname = usePathname();
+
   return (
     <html lang="en">
       {/* Load Google Analytics script asynchronously */}
@@ -66,7 +70,14 @@ const Layout = ({ children }) => {
 
             {/* Render the children components passed to the Layout */}
 
-            <div className={"pt-28"}>{children}</div>
+            <main
+              className={`${
+                pathname === "/" ? "lg:pt-14 md:pt-8" : "lg:pt-28 pt-32"
+              }`}
+            >
+              {children}
+            </main>
+
             {/* Render the Companies component */}
             <Companies />
 
