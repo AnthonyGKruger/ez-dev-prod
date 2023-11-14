@@ -30,7 +30,7 @@ const Hero = () => {
                   )} years of experience
                   in web development.`}
               </p>
-              <p className="text-2xl tracking-wide mt-5 text-white">
+              <p className="text-2xl tracking-wide mt-5 text-white lg:h-8 md:h-16 h-24">
                 Looking for a Skilled Web Developer? <TypedEffect />
               </p>
               <div className="pt-9">
