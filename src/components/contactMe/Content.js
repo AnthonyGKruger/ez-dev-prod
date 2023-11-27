@@ -103,7 +103,7 @@ const ContactMeContent = () => {
             <div
                 className={`sticky top-10 z-50 mx-auto flex w-[80%] md:w-[60%] max-w-full flex-col overflow-hidden 
       rounded bg-red-50 dark:bg-black px-4 py-3 text-sm text-red-500 shadow-lg dark:shadow-none
-       shadow-red-100 ring-1 ring-inset dark:ring-red-500 
+       shadow-red-100 ring-1 ring-inset dark:ring-red-500  
        ring-red-100 `}
                 role="status"
             >

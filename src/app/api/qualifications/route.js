@@ -20,6 +20,15 @@ export const GET = async (request) => {
     },
     {
       id: "q3",
+      institution: "Udemy",
+      qualification: "CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass)",
+      dateFrom: "August 2023",
+      dateTo: "November 2023",
+      comments: [,],
+      link: "https://ude.my/UC-7da085a8-c110-4724-b20f-452494369b0e",
+    },
+    {
+      id: "q4",
       institution: "MiTx Online",
       qualification:
         "6.00.2x Introduction to Computational Thinking and Data Science",
@@ -29,7 +38,7 @@ export const GET = async (request) => {
       link: "https://courses.edx.org/certificates/fa03b6b8c0a04312945e938093948cd2",
     },
     {
-      id: "q4",
+      id: "q5",
       institution: "MiTx Online",
       qualification:
         "6.00.1x: Introduction to Computer Science and Programming Using Python",
@@ -39,7 +48,7 @@ export const GET = async (request) => {
       link: "https://courses.edx.org/certificates/4a21f40f94dc4d5da93426422982fc1b",
     },
     {
-      id: "q5",
+      id: "q6",
       institution: "Lyttleton Manor High School",
       qualification: "National Senior Certificate",
       dateFrom: "January 2006",

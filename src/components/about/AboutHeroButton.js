@@ -12,7 +12,7 @@ const HeroButton = () => {
                             bg-light-gold dark:bg-black hover:bg-white dark:hover:bg-light-gold
                             text-alternative-blue hover:text-alternative-gold dark:text-white
                             dark:hover:text-black
-                            duration-300`}
+                            duration-300 `}
   >
     <Link
       href="/contact-me"
