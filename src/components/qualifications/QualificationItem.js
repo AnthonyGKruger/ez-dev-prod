@@ -38,15 +38,15 @@ const QualificationItem = ({
     if (link) {
       // If a link is available, show the "View Certificate" button
       return (
-        <div
+        <Link
           key={idx}
+          href={link}
+          target="_blank"
           className={`cursor-pointer md:text-md px-3 py-2 mb-2 mr-2 inline rounded-xl border-2 border-primary-gold dark:border-light-gold hover:border-primary-blue bg-primary-blue dark:bg-transparent hover:bg-white dark:hover:bg-light-gold dark:text-white dark:hover:text-black text-light-gold hover:text-primary-blue duration-500`}
         >
-          <Link href={link} target="_blank">
-            <PiCertificate className="inline stroke-light-gold" />
-            <span className="ml-3 inline">View Certificate</span>
-          </Link>
-        </div>
+          <PiCertificate className="inline stroke-light-gold" />
+          <span className="ml-3 inline">View Certificate</span>
+        </Link>
       );
     } else {
       // If no link is available, show the comment using the "BiMedal" icon
