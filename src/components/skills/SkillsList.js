@@ -1,9 +1,10 @@
 "use client";
-import { TbBrandAzure, TbBrandNextjs } from "react-icons/tb";
-import { FaHtml5, FaPhp, FaReact, FaWordpress } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaHtml5, FaReact } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { SiTailwindcss } from "react-icons/si";
-import { FcLinux } from "react-icons/fc";
+import { IoLogoCss3 } from "react-icons/io";
+// import { FcLinux } from "react-icons/fc";
 import { motion } from "framer-motion";
 import SkillsAnimatedHeading from "@/components/skills/SkillsAnimatedHeading";
 
@@ -39,8 +40,8 @@ const SkillsList = () => {
       icon: <FaHtml5 className={`${iconStyles} text-rose-500`} />,
     },
     {
-      title: "PHP",
-      icon: <FaPhp className={`${iconStyles} text-purple-800`} />,
+      title: "CSS",
+      icon: <IoLogoCss3 className={`${iconStyles} text-blue-700`} />,
     },
     // {
     // 	title: "Java",
@@ -54,15 +55,15 @@ const SkillsList = () => {
     // 	title: "SQL",
     // 	icon: <BiLogoPostgresql className={`${iconStyles} text-indigo-600`} />,
     // },
-    {
-      title: "WordPress",
-      icon: <FaWordpress className={`${iconStyles} text-blue-800`} />,
-    },
-    {
-      title: "Azure",
-      icon: <TbBrandAzure className={`${iconStyles} text-blue-500`} />,
-    },
-    { title: "Linux", icon: <FcLinux className={`${iconStyles} `} /> },
+    // {
+    //   title: "WordPress",
+    //   icon: <FaWordpress className={`${iconStyles} text-blue-800`} />,
+    // },
+    // {
+    //   title: "Azure",
+    //   icon: <TbBrandAzure className={`${iconStyles} text-blue-500`} />,
+    // },
+    // { title: "Linux", icon: <FcLinux className={`${iconStyles} `} /> },
   ];
 
   const cardVariants = {
