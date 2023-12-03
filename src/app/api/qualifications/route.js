@@ -10,6 +10,16 @@ export const GET = async (request) => {
       // link: "https://www.ezdev.solutions/media/Anthony_Gordon_kruger.pdf",
     },
     {
+      id: "q3",
+      institution: "Udemy",
+      qualification:
+        "CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass)",
+      dateFrom: "August 2023",
+      dateTo: "November 2023",
+      comments: [,],
+      link: "https://ude.my/UC-7da085a8-c110-4724-b20f-452494369b0e",
+    },
+    {
       id: "q2",
       institution: "Udemy",
       qualification: "The Complete Web Developer in 2022: Zero to Mastery",
@@ -17,15 +27,6 @@ export const GET = async (request) => {
       dateTo: "August 2022",
       comments: [,],
       link: "https://ude.my/UC-1d4f7fd3-ec81-4317-b99d-5747cbcd16ac",
-    },
-    {
-      id: "q3",
-      institution: "Udemy",
-      qualification: "CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass)",
-      dateFrom: "August 2023",
-      dateTo: "November 2023",
-      comments: [,],
-      link: "https://ude.my/UC-7da085a8-c110-4724-b20f-452494369b0e",
     },
     {
       id: "q4",
