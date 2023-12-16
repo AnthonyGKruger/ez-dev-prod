@@ -1,7 +1,7 @@
 import React from "react";
 import AnimatedContent from "./AnimatedContent";
 import TypedEffect from "@/components/home/TypedEffect";
-import HomeMotionDiv from "@/components/home/HomeMotionDiv";
+// import HomeMotionDiv from "@/components/home/HomeMotionDiv";
 import HeroButton from "@/components/home/HeroButton";
 
 const Hero = () => {
@@ -18,25 +18,25 @@ const Hero = () => {
       <div className="container md:mt-8 px-6 m-auto">
         <div className="grid grid-cols-4 gap-6 ">
           <div className="col-span-4 ">
-            <HomeMotionDiv>
-              <h1 className="text-5xl text-light-gold md:font-extrabold ">
-                Hi there, my name is Anthony & I am a Full Stack Web Developer!
-              </h1>
-              <p className="text-2xl tracking-wide mt-5  text-white">
-                {`I'm an ambitious and determined individual with a Bachelor's
+            {/*<HomeMotionDiv>*/}
+            <h1 className="text-5xl text-light-gold md:font-extrabold ">
+              Hi there, my name is Anthony & I am a Full Stack Web Developer!
+            </h1>
+            <p className="text-2xl tracking-wide mt-5  text-white">
+              {`I'm an ambitious and determined individual with a Bachelor's
                   degree in information technology and ${getYearDiffWithMonth(
                     new Date("2020-11-01"),
                     new Date(),
                   )} years of experience
                   in web development.`}
-              </p>
-              <p className="text-2xl tracking-wide mt-5 text-white lg:h-8 md:h-16 h-24">
-                Looking for a Skilled Web Developer? <TypedEffect />
-              </p>
-              <div className="pt-9">
-                <HeroButton />
-              </div>
-            </HomeMotionDiv>
+            </p>
+            <p className="text-2xl tracking-wide mt-5 text-white lg:h-8 md:h-16 h-24">
+              Looking for a Skilled Web Developer? <TypedEffect />
+            </p>
+            <div className="pt-9">
+              <HeroButton />
+            </div>
+            {/*</HomeMotionDiv>*/}
           </div>
         </div>
       </div>
