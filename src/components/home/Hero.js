@@ -1,3 +1,4 @@
+"use server";
 import React from "react";
 import AnimatedContent from "./AnimatedContent";
 import TypedEffect from "@/components/home/TypedEffect";

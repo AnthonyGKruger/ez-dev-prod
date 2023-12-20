@@ -1,3 +1,4 @@
+"use server";
 import HeroImage from "@/components/about/HeroImage";
 import AboutHeroButton from "@/components/about/AboutHeroButton";
 
