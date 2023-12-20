@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ezdev.solutions
+
+# Sitemaps
+Sitemap: https://www.ezdev.solutions/sitemap.xml
