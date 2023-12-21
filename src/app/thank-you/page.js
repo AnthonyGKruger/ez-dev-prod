@@ -3,7 +3,8 @@ import ThankYouContent from "@/components/thankYou/Content";
 // Metadata for the Thank You page
 export const metadata = {
   title: "Thank You - Anthony Gordon Kruger's Portfolio",
-  description: "EZdev portfolio",
+  description:
+    "Thank you for contacting me, I will get back to you shortly... In the meantime, why not carry on looking around?",
   icons: [
     { rel: "icon", url: "/code.png" },
     { rel: "apple", url: "/code.png" },

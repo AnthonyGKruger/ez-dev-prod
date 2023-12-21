@@ -3,7 +3,8 @@ import PortfolioContent from "@/components/portfolio/Content";
 // Metadata for the Portfolio page
 export const metadata = {
   title: "Portfolio - Anthony Gordon Kruger's Portfolio",
-  description: "EZdev portfolio",
+  description:
+    "Dominating The Web One Project At A Time\n" + "Check Out My Portfolio",
   icons: [
     { rel: "icon", url: "/code.png" },
     { rel: "apple", url: "/code.png" },

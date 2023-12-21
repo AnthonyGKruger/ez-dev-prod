@@ -1,9 +1,8 @@
-import React from "react";
 import Hero from "@/components/home/Hero";
-import Skills from "./skills/page";
-import Portfolio from "./portfolio/page";
-import WorkExperience from "@/app/work-experience/page";
-import Qualifications from "@/app/qualifications/page";
+import SkillsList from "@/components/skills/SkillsList";
+import PortfolioContent from "@/components/portfolio/Content";
+import QualificationsContent from "@/components/qualifications/Content";
+import WorkExperienceContent from "@/components/workExperience/Content";
 
 // Home component representing the home page of the portfolio website
 const Home = () => {
@@ -13,16 +12,16 @@ const Home = () => {
       <Hero />
 
       {/* Display the Skills component */}
-      <Skills />
+      <SkillsList />
 
       {/* Display the Portfolio component */}
-      <Portfolio />
+      <PortfolioContent />
 
       {/* Display the Qualifications component */}
-      <Qualifications />
+      <QualificationsContent />
 
       {/* Display the WorkExperience component */}
-      <WorkExperience />
+      <WorkExperienceContent />
     </article>
   );
 };

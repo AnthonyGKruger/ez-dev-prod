@@ -3,7 +3,7 @@ import SkillsList from "@/components/skills/SkillsList";
 // Metadata for the Skills page
 export const metadata = {
   title: "Skills - Anthony Gordon Kruger's Portfolio",
-  description: "EZdev portfolio",
+  description: "Some Of The Skills & Awesome Technologies I Use!",
   icons: [
     { rel: "icon", url: "/code.png" },
     { rel: "apple", url: "/code.png" },

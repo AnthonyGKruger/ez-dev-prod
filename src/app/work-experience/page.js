@@ -3,7 +3,8 @@ import WorkExperienceContent from "@/components/workExperience/Content";
 // Metadata for the Work Experience page
 export const metadata = {
   title: "Work Experience - Anthony Gordon Kruger's Portfolio",
-  description: "EZdev portfolio",
+  description:
+    "Hard Work & Perseverance\n" + "Check Out My Work Experience Below",
   icons: [
     { rel: "icon", url: "/code.png" },
     { rel: "apple", url: "/code.png" },

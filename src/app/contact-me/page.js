@@ -3,7 +3,9 @@ import ContactMeContent from "@/components/contactMe/Content";
 // Metadata for the Contact Me page
 export const metadata = {
   title: "Contact Me - Anthony Gordon Kruger's Portfolio",
-  description: "EZdev portfolio",
+  description:
+    "Let's Build Something Together!\n" +
+    "Fill In The Form Below To Contact Me",
   icons: [
     { rel: "icon", url: "/code.png" },
     { rel: "apple", url: "/code.png" },

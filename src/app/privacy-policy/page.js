@@ -3,7 +3,9 @@ import PrivacyPolicyContent from "@/components/privacyPolicy/Content";
 // Metadata for the Privacy Policy page
 export const metadata = {
   title: "Privacy Policy - Anthony Gordon Kruger's Portfolio",
-  description: "EZdev portfolio",
+  description:
+    "All About Privacy\n" +
+    "This privacy policy applies to ezdev.solutions and explains how I use any personal information I collect about you when you use this website.\n",
   icons: [
     { rel: "icon", url: "/code.png" },
     { rel: "apple", url: "/code.png" },
