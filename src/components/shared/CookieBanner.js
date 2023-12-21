@@ -44,9 +44,9 @@ const CookieBanner = (props) => {
             />
           </div>
           <div className="col-span-3 md:col-span-10 lg:col-span-9 py-auto self-center">
-            <h1 className={`xl:text-2xl mx-auto md:pt-2  `}>
+            <p className={`xl:text-2xl mx-auto md:pt-2  `}>
               {`Cookie Policy and T's & C's`}
-            </h1>
+            </p>
           </div>
         </div>
       </div>
