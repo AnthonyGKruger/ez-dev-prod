@@ -12,6 +12,7 @@ import BackToTop from "@/components/shared/BackToTop";
 import ThemeProviderHelper from "@/components/shared/ThemeProviderHelper";
 import ReduxProviderHelper from "@/components/shared/ReduxProviderHelper";
 import { usePathname } from "next/navigation";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
@@ -95,6 +96,7 @@ const Layout = ({ children }) => {
 
             {/* Render the Analytics component from @vercel/analytics */}
             <Analytics />
+            <SpeedInsights />
             {/*</ThemeProvider>*/}
           </ThemeProviderHelper>
         </ReduxProviderHelper>
