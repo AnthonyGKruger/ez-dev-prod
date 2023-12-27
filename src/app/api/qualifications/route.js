@@ -16,7 +16,7 @@ export const GET = async (request) => {
       dateFrom: "November 2023",
       dateTo: "December 2023",
       comments: [,],
-      link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-a8475fc7-ea9f-4f40-9eb1-31f973a73b5a.pdf",
+      link: "https:ude.my/UC-a8475fc7-ea9f-4f40-9eb1-31f973a73b5a",
     },
     {
       id: "q3",
