@@ -2,8 +2,8 @@ import QualificationsContent from "@/components/qualifications/Content";
 
 // Metadata for the Qualifications page
 export const metadata = {
-  title: "Always Leveling Up\n" + "Have A Look At My Qualifications",
-  description: "EZdev portfolio",
+  title: "Qualifications - Anthony Gordon Kruger's Portfolio",
+  description: "Always Leveling Up\n" + "Have A Look At My Qualifications",
   icons: [
     { rel: "icon", url: "/code.png" },
     { rel: "apple", url: "/code.png" },

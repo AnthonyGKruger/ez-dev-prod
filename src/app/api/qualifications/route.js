@@ -10,6 +10,15 @@ export const GET = async (request) => {
       // link: "https://www.ezdev.solutions/media/Anthony_Gordon_kruger.pdf",
     },
     {
+      id: "q7",
+      institution: "Udemy",
+      qualification: "Next.js 14 & React - The Complete Guide",
+      dateFrom: "November 2023",
+      dateTo: "December 2023",
+      comments: [,],
+      link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-a8475fc7-ea9f-4f40-9eb1-31f973a73b5a.pdf",
+    },
+    {
       id: "q3",
       institution: "Udemy",
       qualification:
