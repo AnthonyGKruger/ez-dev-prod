@@ -10,7 +10,7 @@ export const GET = async (request) => {
         "ranging from front-end development and UI/UX design to CMS integration, e-commerce solutions,\n" +
         "database management, server-side development, version control, performance optimization, security,\n" +
         "testing and debugging, documentation, collaboration, and continuous learning.",
-      dateFrom: "December 2022",
+      dateFrom: "November 2020",
       dateTo: "Present",
       comments: [
         // "Successfully completed Portfolio of evidence",
