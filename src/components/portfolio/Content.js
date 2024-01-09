@@ -122,7 +122,7 @@ const PortfolioContent = () => {
                 >
                   <Link
                     href={portfolioItem.link}
-                    className="font-base text-base tracking-wide flex"
+                    className="font-base text-base tracking-wide flex z-50"
                     target="_blank"
                   >
                     <GoBrowser className="inline self-center mr-2" />
@@ -139,7 +139,7 @@ const PortfolioContent = () => {
                   >
                     <Link
                       href={portfolioItem.referralLetter}
-                      className="font-base text-base tracking-wide flex"
+                      className="font-base text-base tracking-wide flex z-50"
                       target="_blank"
                     >
                       <PiCertificate className="inline self-center mr-2 font-bold" />
@@ -157,7 +157,7 @@ const PortfolioContent = () => {
                   >
                     <Link
                       href={portfolioItem.sourceCode}
-                      className="font-base text-base tracking-wide flex"
+                      className="font-base text-base tracking-wide flex z-50"
                       target="_blank"
                     >
                       <BsCodeSlash className="inline self-center mr-2" />

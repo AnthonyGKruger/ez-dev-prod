@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.ezdev.solutions/api/portfolio</loc><lastmod>2024-01-09T04:33:23.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/api/skills</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/contact-me</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/api/work-experience</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/languages</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/skills</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/privacy-policy</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/thank-you</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/api/qualifications</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/work-experience</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/portfolio</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/qualifications</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.ezdev.solutions/about</loc><lastmod>2024-01-09T04:33:23.699Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/api/skills</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/api/qualifications</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/languages</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/qualifications</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/api/work-experience</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/skills</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/thank-you</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/contact-me</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/api/portfolio</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/work-experience</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/privacy-policy</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/portfolio</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.ezdev.solutions/about</loc><lastmod>2024-01-09T04:40:13.700Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
