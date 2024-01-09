@@ -20,7 +20,7 @@ export const viewport = {
 };
 
 // PrivacyPolicy component representing the Privacy Policy page of the portfolio website
-const PrivacyPolicy = () => {
+const PrivacyPolicy = async () => {
   return (
     <>
       {/* Render the PrivacyPolicyContent component */}

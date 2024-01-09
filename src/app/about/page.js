@@ -21,7 +21,7 @@ export const viewport = {
 };
 
 // About component representing the About Me page of the portfolio website
-const About = () => {
+const About = async () => {
   return (
     <>
       {/* Render the Hero component */}

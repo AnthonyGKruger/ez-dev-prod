@@ -18,7 +18,7 @@ export const viewport = {
 };
 
 // Skills component representing the Skills page of the portfolio website
-const Skills = () => {
+const Skills = async () => {
   return (
     <>
       {/* Render the SkillsList component */}

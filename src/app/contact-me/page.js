@@ -20,7 +20,7 @@ export const viewport = {
 };
 
 // ContactMe component representing the Contact Me page of the portfolio website
-const ContactMe = () => {
+const ContactMe = async () => {
   return (
     <>
       {/* Render the ContactMeContent component */}

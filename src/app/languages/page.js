@@ -19,7 +19,7 @@ export const viewport = {
 };
 
 // Languages component representing the Languages page of the portfolio website
-const Languages = () => {
+const Languages = async () => {
   return (
     <>
       {/* Render the LanguagesContent component */}

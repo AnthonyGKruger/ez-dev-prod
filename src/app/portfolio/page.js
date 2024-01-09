@@ -19,7 +19,7 @@ export const viewport = {
 };
 
 // Portfolio component representing the Portfolio page of the portfolio website
-const Portfolio = () => {
+const Portfolio = async () => {
   return (
     <>
       {/* Render the PortfolioContent component */}

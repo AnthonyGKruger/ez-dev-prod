@@ -5,7 +5,7 @@ import QualificationsContent from "@/components/qualifications/Content";
 import WorkExperienceContent from "@/components/workExperience/Content";
 
 // Home component representing the home page of the portfolio website
-const Home = () => {
+const Home = async () => {
   return (
     <article>
       {/* Display the Hero component */}

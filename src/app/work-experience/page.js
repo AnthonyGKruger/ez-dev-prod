@@ -19,7 +19,7 @@ export const viewport = {
 };
 
 // WorkExperience component representing the Work Experience page of the portfolio website
-const WorkExperience = () => {
+const WorkExperience = async () => {
   return (
     <>
       {/* Render the WorkExperienceContent component */}

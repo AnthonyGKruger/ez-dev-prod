@@ -17,7 +17,7 @@ export const viewport = {
 };
 
 // Qualifications component representing the Qualifications page of the portfolio website
-const Qualifications = () => {
+const Qualifications = async () => {
   return (
     <>
       {/* Render the QualificationsContent component */}

@@ -19,7 +19,7 @@ export const viewport = {
 };
 
 // ThankYou component representing the Thank You page of the portfolio website
-const ThankYou = () => {
+const ThankYou = async () => {
   return (
     <>
       {/* Render the ThankYouContent component */}
