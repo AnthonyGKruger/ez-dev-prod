@@ -75,8 +75,8 @@ const SkillsList = () => {
       y: 0,
       transition: {
         type: "spring",
-        bounce: 0.4,
-        duration: 1.5,
+        bounce: 0.5,
+        duration: 1.3,
       },
     },
   };
@@ -112,7 +112,7 @@ const SkillsList = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: amount }}
         whileHover={{ scale: 1.1 }}
-        transition={{ type: "spring", stiffness: 0, damping: 50 }}
+        transition={{ type: "spring", stiffness: 500, damping: 15 }} //consider adding bounce and duration here
       >
         <motion.div className="max-w-full" variants={cardVariants}>
           <div
@@ -139,10 +139,13 @@ const SkillsList = () => {
       <SkillsAnimatedHeading />
       <section className="py-14 md:py-28 bg-primary-blue dark:bg-black overflow-hidden">
         <div className="container px-6 m-auto">
-          <div className="grid grid-cols-4 gap-6 md:grid-cols-6 lg:grid-cols-12">
+          <motion.div
+            variants={{ visible: { transition: { staggerChildren: 5 } } }}
+            className="grid grid-cols-4 gap-6 md:grid-cols-6 lg:grid-cols-12"
+          >
             {/* Render the cards for each skill */}
             {cards}
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
