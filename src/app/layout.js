@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
           ></iframe>
         </noscript>
 
-        {/* Redux store provider */}
+        {/* Redux store provider  */}
         <ReduxProviderHelper>
           {/* Theme provider for next-themes */}
           <ThemeProviderHelper>
