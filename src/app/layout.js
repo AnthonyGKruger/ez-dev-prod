@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-WRTN27BM');`}
+      })(window,document,'script','dataLayer',${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS});`}
       </Script>
 
       {/* Define the body element */}
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
       >
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WRTN27BM"
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
