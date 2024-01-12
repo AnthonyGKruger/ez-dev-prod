@@ -17,17 +17,19 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
 // Layout component that wraps the content of the application
-const Layout = async ({ children }) => {
+const Layout = ({ children }) => {
   const pathname = usePathname();
 
   return (
     <html lang="en">
+      {/* Load Google Analytics script asynchronously */}
+
       <Script id={"google-tag-manager"}>
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer',${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS});`}
+      })(window,document,'script','dataLayer','GTM-WRTN27BM');`}
       </Script>
 
       {/* Define the body element */}
@@ -36,7 +38,7 @@ const Layout = async ({ children }) => {
       >
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM}`}
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WRTN27BM"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
