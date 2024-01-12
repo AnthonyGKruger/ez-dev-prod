@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
         <ReduxProviderHelper>
           {/* Theme provider for next-themes */}
           <ThemeProviderHelper>
-            {/*<ThemeProvider attribute="class">*/}
+            {/*<ThemeProvider  attribute="class">*/}
             {/* Render the Navbar component */}
             <Navbar />
 
