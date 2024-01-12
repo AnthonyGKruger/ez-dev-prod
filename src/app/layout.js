@@ -17,7 +17,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
 // Layout component that wraps the content of the application
-const Layout = ({ children }) => {
+const Layout = async ({ children }) => {
   const pathname = usePathname();
 
   return (
