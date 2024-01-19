@@ -21,7 +21,8 @@ export const GET = async (request) => {
     {
       id: "q8",
       institution: "Udemy",
-      qualification: "Next.js 14 & React - The Complete Guide",
+      qualification:
+        "React - The Complete Guide 2024 (incl. React Router & Redux)",
       dateFrom: "December 2023",
       dateTo: "January 2024",
       comments: [,],
