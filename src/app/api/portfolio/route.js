@@ -14,15 +14,15 @@ export const GET = async (request) => {
       referralLetter:
         "/media/Digital Stream Referral Letter - Anthony Kruger - web - signed.pdf",
     },
-    {
-      id: "p2",
-      title: "Digital Payment Transformation Services",
-      description:
-        "Ecommerce app built using NextJS, Tailwind and Strapi - (still under development.)",
-      link: "https://inhonourofalegend.vercel.app",
-      image: "/media/logos/DPTS.png",
-      sourceCode: "https://github.com/AnthonyGKruger/dpts-prod",
-    },
+    // {
+    //   id: "p2",
+    //   title: "Digital Payment Transformation Services",
+    //   description:
+    //     "Ecommerce app built using NextJS, Tailwind and Strapi - (still under development.)",
+    //   link: "https://inhonourofalegend.vercel.app",
+    //   image: "/media/logos/DPTS.png",
+    //   sourceCode: "https://github.com/AnthonyGKruger/dpts-prod",
+    // },
     {
       id: "p1",
       title: "Mumbi Trust Administrators",
