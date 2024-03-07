@@ -13,31 +13,30 @@ import ThemeProviderHelper from "@/components/shared/ThemeProviderHelper";
 import ReduxProviderHelper from "@/components/shared/ReduxProviderHelper";
 import { usePathname } from "next/navigation";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import Hotjar from "@hotjar/browser";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
 // Layout component that wraps the content of the application
 const Layout = ({ children }) => {
-  const [script, setScript] = useState("");
+  // const [script, setScript] = useState("");
   const pathname = usePathname();
 
   useEffect(() => {
-    setScript(`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer',${process.env.NEXT_PUBLIC_GTM}); 
-      `);
+    const siteId = 3647050;
+    const hotjarVersion = 6;
+
+    Hotjar.init(siteId, hotjarVersion);
   }, []);
 
   return (
     <html lang="en">
       {/* Load Google Analytics script asynchronously */}
 
-      <Script defer id={"google-tag-manager"}>
-        {script}
-      </Script>
+      {/*<Script defer id={"google-tag-manager"}>*/}
+      {/*  {script}*/}
+      {/*</Script>*/}
 
       {/* Define the body element */}
       <body
