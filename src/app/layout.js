@@ -13,32 +13,30 @@ import ThemeProviderHelper from "@/components/shared/ThemeProviderHelper";
 import ReduxProviderHelper from "@/components/shared/ReduxProviderHelper";
 import { usePathname } from "next/navigation";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { useEffect, useState } from "react";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
 // Layout component that wraps the content of the application
 const Layout = ({ children }) => {
+  const [script, setScript] = useState("");
   const pathname = usePathname();
+
+  useEffect(() => {
+    setScript(`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer',${process.env.NEXT_PUBLIC_GTM}); 
+      `);
+  }, []);
 
   return (
     <html lang="en">
       {/* Load Google Analytics script asynchronously */}
 
-      <Script id={"google-tag-manager"}>
-        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer',${process.env.NEXT_PUBLIC_GTM}); 
-      
-      (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3647050,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
+      <Script defer id={"google-tag-manager"}>
+        {script}
       </Script>
 
       {/* Define the body element */}
