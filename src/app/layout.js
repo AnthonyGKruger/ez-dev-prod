@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer',${process.env.NEXT_PUBLIC_GTM}); 
       
-      function(h,o,t,j,a,r){
+      (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:3647050,hjsv:6};
         a=o.getElementsByTagName('head')[0];
