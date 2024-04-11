@@ -58,21 +58,6 @@ const PortfolioContent = () => {
 
         amount = amountMap[idx] || 0;
 
-        // Handle click event for site viewing
-        const handleClickForSiteViewing = () => {
-          window.open(portfolioItem.link, "_blank");
-        };
-
-        // Handle click event for code viewing
-        const handleClickForCodeViewing = () => {
-          window.open(portfolioItem.sourceCode, "_blank");
-        };
-
-        // Handle click event for referral letter viewing
-        const handleClickForLetterViewing = () => {
-          window.open(portfolioItem.referralLetter, "_blank");
-        };
-
         return (
           <motion.div
             key={idx}
@@ -82,7 +67,6 @@ const PortfolioContent = () => {
             viewport={{ once: true, amount: amount }}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 50 }}
-            onClick={handleClickForSiteViewing}
           >
             <motion.div
               className={`h-full pb-3 pt-5 px-5 overflow-hidden text-center bg-white dark:bg-neutral-900 rounded-lg 
@@ -114,7 +98,6 @@ const PortfolioContent = () => {
               <div className="pt-9">
                 {/* Buttons for site viewing, referral letter, and code viewing */}
                 <button
-                  // onClick={handleClickForSiteViewing}
                   className={`hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
                     dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
                     px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
@@ -131,7 +114,6 @@ const PortfolioContent = () => {
                 </button>
                 {portfolioItem.referralLetter ? (
                   <button
-                    // onClick={handleClickForLetterViewing}
                     className={`ml-5 hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
                       dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
                       px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
@@ -149,7 +131,6 @@ const PortfolioContent = () => {
                 ) : null}
                 {portfolioItem.sourceCode ? (
                   <button
-                    // onClick={handleClickForCodeViewing}
                     className={`ml-5 hover:scale-105 mx-auto text-center border-2 border-alternative-gold 
                       dark:border-light-gold hover:border-primary-blue dark:hover:border-light-gold rounded-xl 
                       px-3 py-2 pointer bg-primary-blue dark:bg-transparent dark:hover:bg-light-gold hover:bg-white 
