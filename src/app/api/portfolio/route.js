@@ -51,15 +51,15 @@ export const GET = async (request) => {
     //   image: "/media/logos/TLW-logo.jpg",
     //   sourceCode: "https://github.com/AnthonyGKruger/TLWfans",
     // },
-    // {
-    //   id: "p4",
-    //   title: "Smarten-Up Recruitment Assessment",
-    //   description: "Figma mockup assessment using React.js and Tailwind CSS.",
-    //   link: "https://smarten-up.vercel.app/",
-    //   image:
-    //     "https://smartenup-figma-test.s3.eu-central-1.amazonaws.com/assets/icon.png",
-    //   sourceCode: "https://github.com/AnthonyGKruger/smarten",
-    // },
+    {
+      id: "p4",
+      title: "Smarten-Up Recruitment Assessment",
+      description: "Figma mockup assessment using React.js and Tailwind CSS.",
+      link: "https://smarten-up.vercel.app/",
+      image:
+        "https://smartenup-figma-test.s3.eu-central-1.amazonaws.com/assets/icon.png",
+      sourceCode: "https://github.com/AnthonyGKruger/smarten",
+    },
   ];
   // Return a JSON response with the project data and status 200
   return new Response(JSON.stringify(responseData), {
