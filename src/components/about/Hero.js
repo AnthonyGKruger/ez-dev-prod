@@ -46,11 +46,11 @@ const Hero = () => {
                in 2021 with a comprehensive understanding of web principles.`}
             </p>
 
-            <p className="text-xl tracking-wide mt-5 text-white">
+            {/* <p className="text-xl tracking-wide mt-5 text-white">
               {`Now, I'm eager to combine my technical expertise with my customer-first approach to become a valuable 
               asset to your team. Whether you're looking to build a brand-new website, revamp an existing one, or 
               integrate innovative features, I'm confident I can deliver solutions that exceed expectations.`}
-            </p>
+            </p> */}
 
             <p className="text-xl tracking-wide mt-5 text-white">
               {`Let's build the web together! I'm excited to discuss your project and showcase how my unique blend of 
