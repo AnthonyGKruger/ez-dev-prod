@@ -1,6 +1,22 @@
 export const GET = async (request) => {
   const responseData = [
     {
+      id: "w6",
+      company: "Osiris Trading (Pty) Ltd",
+      role: "Front End Web Developer",
+      summary: `As a Front-End Developer for Osiris Trading,
+       I play a key role in designing and developing responsive, 
+       user-friendly web applications, features and optimizations using modern JavaScript frameworks
+        and best practices in UI/UX design. 
+        I collaborated closely with cross-functional teams to ensure seamless integration with back-end services,
+         optimized website performance, and enhanced cross-browser compatibility. My focus on mobile-first design,
+          accessibility, and performance lead to improved user engagement and site efficiency, while my expertise in
+          version control and Agile workflows ensure timely and high-quality project delivery.`,
+      dateFrom: "October 2024",
+      dateTo: "Present",
+      comments: [],
+    },
+    {
       id: "w5",
       company: "EZdev Solutions (PTY) Ltd",
       role: "Full Stack Web Developer",
@@ -11,11 +27,8 @@ export const GET = async (request) => {
         "database management, server-side development, version control, performance optimization, security,\n" +
         "testing and debugging, documentation, collaboration, and continuous learning.",
       dateFrom: "November 2020",
-      dateTo: "Present",
-      comments: [
-        // "Successfully completed Portfolio of evidence",
-        // "Successful integration into corporate working environments",
-      ],
+      dateTo: "Present - Part time / Freelance",
+      comments: [],
     },
     {
       id: "w1",
@@ -37,7 +50,7 @@ export const GET = async (request) => {
       summary:
         "Directing all operational aspects including distribution, customer service, human resources, administration and sales in accordance with the company’s objectives. Providing training, coaching, development and motivation for branch personnel. Developing forecasts and financial objectives.",
       dateFrom: "June 2018",
-      dateTo: "Present",
+      dateTo: "September 2024",
       comments: ["Managing the flagship branch", "Team of the year"],
     },
     {
